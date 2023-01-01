@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nice.Shot Productions</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="bg-dark">
+
+    <header class="fixed-top navbar-scroller">
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent p-0" aria-label="Main Header">
+            <div class="container-xl">
+                <a class="navbar-brand" href="./">
+                    <img src="./img/photography-logo.png" alt="logo">
+                </a>
+                <button class="btn d-lg-none d-block" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasHeader" aria-controls="offcanvasHeader">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <!-- <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsHeader07XL" aria-controls="navbarsHeader07XL" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+
+                <div class="collapse navbar-collapse" id="navbarsHeader07XL">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./about.html">about</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./portfolio.html">portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicesandpricing.html">services and packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="blogs.html">blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-light rounded-0" href="contact.html">contact
+                                us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="banner">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="./img/slider-1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>First slide label</h2>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="./img/slider-2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Second slide label</h2>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="./img/slider-3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Third slide label</h2>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <section id="intro">
+        <div class="container py-5">
+            <div class="row align-items-center align-content-center">
+                <div class="banner-text col-lg-7">
+                    <h1 class="text-white fs-7" data-aos="fade-up">Empowering our entrepreneurs to shift the future of
+                        aerospace.</h1>
+                </div>
+                <div class="banner-text col-lg-5">
+                    <p class="text-white fs-5" data-aos="fade-up">Digital Agency invests in autonomous mobility,
+                        electrification, low-carbon economy, advanced materials, manufacturing systems, next-generation
+                        computing, sensing, security, and beyond.</p>
+                    <a class="btn btn-lg rounded-pill" href="./portfolio.html" data-aos="fade-up">WHO WE FUND </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="intro">
+        <div class="container py-5">
+            <div class="my-slider">
+                <div>
+                    <div style="width: auto; height: 300px; background-image: url('./img/slider-1.jpg'); background-size: cover"
+                        class="img-fluid"></div>
+                </div>
+                <div>
+                    <div style="width: auto; height: 300px; background-image: url('./img/slider-2.jpg'); background-size: cover"
+                        class="img-fluid"></div>
+                </div>
+                <div>
+                    <div style="width: auto; height: 300px; background-image: url('./img/slider-3.jpg'); background-size: cover"
+                        class="img-fluid"></div>
+                </div>
+                <div>
+                    <div style="width: auto; height: 300px; background-image: url('./img/slider-3.jpg'); background-size: cover"
+                        class="img-fluid"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="bi bi-arrow-up"></i></button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
