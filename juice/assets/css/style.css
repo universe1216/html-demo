@@ -1,0 +1,648 @@
+@import url('../../../css2');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffd900;
+}
+
+.overflow-all {
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+p,
+a,
+span,
+em,
+i,
+small,
+ul,
+li,
+button {
+  font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+.bg-blue {
+  background-color: #0a3161;
+}
+
+.text-blue {
+  color: #0a3161;
+}
+
+.btn-blue {
+  background-color: #0a3161;
+  color: white;
+  font-weight: 900 !important;
+}
+
+.btn-blue:hover {
+  color: #fff;
+  background-color: #093469;
+}
+
+.text-primary {
+  color: #0a3161 !important;
+}
+
+.bg-red {
+  background-color: #b31942;
+}
+
+.bg-light-gray {
+  background-color: #f1f5f9;
+}
+
+.bg-through {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.bg-news {
+  background: rgb(247, 247, 247);
+}
+
+.text-light-gray {
+  color: rgb(199, 199, 199);
+  letter-spacing: 2px;
+}
+
+.bg-footer {
+  background-color: #000d1a;
+}
+
+.footer-bottom {
+  background-color: #000a13;
+}
+
+.p-10 {
+  padding: 5rem;
+}
+
+.pt-10 {
+  padding-top: 5rem;
+}
+
+.py-10 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.py-11 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.py-12 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.fs-6 {
+  font-size: 3rem;
+}
+
+.fs-7 {
+  font-size: 3.5rem;
+}
+
+.fs-8 {
+  font-size: 4rem;
+}
+
+.fs-9 {
+  font-size: 4.5rem;
+}
+
+.fs-10 {
+  font-size: 5rem;
+}
+
+.obj-fit {
+  object-fit: cover;
+}
+
+.btn-red {
+  background-color: #b31942;
+  color: white;
+  font-size: 1rem;
+  font-weight: 900 !important;
+}
+
+.second-banner-text {
+  text-align: center;
+  max-height: 600px;
+}
+
+.title-shadow {
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.6);
+}
+
+.sub-shadow {
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.6);
+}
+
+.max-width-500 {
+  max-width: 500px;
+}
+
+.max-height-500 {
+  max-height: 500px;
+}
+
+.max-width-600 {
+    max-width: 600px;
+}
+
+.nav-item {
+    transform: translate(0px, 0px);
+    transtion: 0.3s ease-in;
+}
+
+.nav-item:hover {
+    transform: translate(-2px, -2px);
+    transtion: 0.3s ease-in;
+}
+
+.nav-item {
+    overflow: hidden;
+    position: relative;
+}
+
+.nav-item::before{
+    width: 0%;
+    content: '';
+    position: absolute;
+    background: #ffe100;
+    height: 100%;
+    transition: 0.3s ease-in;
+    z-index: -1;
+}
+
+.nav-item:hover::before{
+    width: 100%;
+    transition: 0.3s ease-in;
+}
+
+/* GUIDED MEDITATION ONE.mp3
+  
+  guided-meditation-one.mp3
+  .btn-red:hover {
+    background-color: crimson;
+    transition: 0.3s ease-in;
+    color: white;
+    font-size: 1rem;
+  } */
+
+.splitting .char {
+  animation: slide-in 0.5s ease-out both;
+  animation-delay: calc(70ms * var(--char-index));
+}
+
+@keyframes slide-in {
+  from {
+    transform: scale(0.7) translateY(100%);
+    opacity: 0;
+  }
+}
+
+.arrow {
+  animation: go 0.7s infinite;
+  animation-delay: 0.1s;
+}
+
+@keyframes go {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100px);
+  }
+}
+
+.nav-item {
+  padding: 0px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  border-radius: 20px;
+  border: 1px solid #333;
+  margin: 0 5px;
+}
+
+.nav-item .nav-link {
+  padding: 2px 5px;
+}
+
+.home-banner-text {
+  font-size: 10rem;
+  line-height: 160px;
+  text-align: center;
+  font-weight: 900;
+}
+
+.bg-success {
+  background: #35c76d !important;
+}
+
+#topBtn {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.list-group-item {
+    border-bottom: 1px solid #111 !important;
+}
+
+/* order */
+
+.order-md-6 {
+  order: 6 !important;
+}
+
+.order-6 {
+  order: 6 !important;
+}
+
+.main-slide {
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 700vw;
+}
+.one {
+  background: #a860e7;
+}
+.two {
+  background: #f02828;
+}
+.two {
+    
+}
+.three {
+  background: #fe4622;
+}
+.four {
+  background: #ffd900;
+}
+.five {
+  background: #ffd900;
+}
+.six {
+  background: transparent;
+}
+.seven {
+  background: #fe4622;
+}
+
+.owl-theme .owl-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  margin: 0;
+}
+
+.owl-theme .owl-nav .owl-prev {
+  position: inherit;
+  left: 0;
+}
+
+.owl-theme .owl-dots {
+  position: absolute;
+  top: 50%;
+  left: -30%;
+  transform: rotate(90deg) translate(-5%, -50%);
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 30px;
+  height: 5px;
+  background-color: #000d1a;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+  background-color: #ffd900;
+}
+
+.owl-theme .owl-nav .owl-next {
+  position: inherit;
+  right: 0;
+}
+
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background-color: transparent !important;
+}
+
+.owl-theme .owl-nav .owl-prev,
+.owl-theme .owl-nav .owl-next {
+  font-size: 3rem !important;
+  background-color: rgb(236, 33, 33) !important;
+  color: #ffffff !important;
+  border-radius: 50% !important;
+  line-height: 0 !important;
+}
+
+.owl-theme .owl-nav .owl-prev svg,
+.owl-theme .owl-nav .owl-next svg {
+  padding: 0.2rem 1rem !important;
+}
+
+.animated-slider-bg {
+  animation: rotate 100s ease infinite;
+  animation-delay: 0.1s;
+  z-index: -10;
+  width: 100%;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+    animation: rotate2 100s ease infinite;
+}
+
+@keyframes rotate2 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.inner-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.info-column {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 50%;
+  box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.2);
+  height: 200px;
+  width: 200px;
+  display: grid;
+  place-items: center;
+}
+
+.wrapper {
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+}
+
+.outer-wrapper {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+input::placeholder, textarea::placeholder {
+  visibility: hidden !important;
+}
+
+.submit-area {
+    clip-path: circle(62.5% at 50% 99%);
+    background: #fff;
+    width: 300px;
+    height: 150px;
+}
+
+.bg-md-warning {
+    background: #ffc107;
+}
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  color: #ccc;
+  position: inherit;
+  top: 0;
+  left: 0;
+  z-index: 200;
+}
+
+.progress-bar {
+  width: 0px;
+  height: 8px;
+  background-image: linear-gradient(to right, firebrick, navy);
+}
+
+/* menu */
+
+@media screen and (max-width: 2500px) {
+}
+
+@media screen and (max-width: 1800px) {
+}
+
+@media screen and (max-width: 1500px) {
+}
+
+@media screen and (max-width: 1200px) {
+  .home-banner-text {
+    font-size: 8rem;
+    line-height: 140px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+    .home-banner-text {
+        font-size: 6rem;
+        line-height: 100px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+  .wrapper {
+  transform: rotate(0deg) translateY(0vh);
+  transform-origin: 0 0;
+}
+.outer-wrapper {
+  width: auto;
+  height: auto;
+  transform: rotate(0deg) translateX(0vh);
+  transform-origin: 0 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+}
+.main-slide {
+  width: 100vw;
+  height: auto;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+.bg-md-warning {
+    background: transparent;
+}
+    nav {
+        display: block;
+        background-color: #ffd900;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        padding: 1.5rem;
+        transform: translateX(100%) scale(1);
+        transition: transform 0.5s ease-in-out;
+        z-index: 1000;
+        height: 100vh;
+        width: 100%;
+    }
+    nav.active {
+        transform: translateX(0) scale(1.05);
+        transition: 0.5s ease-in-out;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 20px;
+        margin: 0px;
+    }
+    nav ul li {
+        padding: 1rem 0;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: 0.3s ease-in;
+    }
+    nav.active ul li {
+        transform: translateY(0);
+        transition: 0.6s ease-in-out;
+        opacity: 1;
+        transition-delay: calc(0.2s * var(--i));
+    }
+    .toggle-button {
+        z-index: 3000;
+        padding: 6px 10px;
+        cursor: pointer;
+        position: fixed;
+        background: #B31942;
+        border: 0;
+        top: 20px;
+        left: auto;
+        right: 20px;
+    }
+    .bar1 {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 6px 0;
+        border-radius: 5px;
+        transition: 0.4s;
+    }
+    .bar2 {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 6px 0;
+        border-radius: 5px;
+        transition: 0.4s;
+    }
+    .bar3 {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 6px 0;
+        border-radius: 5px;
+        transition: 0.4s;
+    }
+    .change .bar1 {
+        transform: rotate(-45deg) translate(-6px, 6px);
+        width: 30px;
+    }
+    .change .bar2 {
+        transform: rotate(45deg) translate(0px, 0px);
+        width: 30px;
+    }
+    .change .bar3 {
+        opacity: 0;
+    }
+    .first-anime {
+        width: 200px;
+    }
+    .second-anime {
+        width: 200px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .home-banner-text {
+        font-size: 7rem;
+        line-height: 100px;
+    }
+    .first-anime {
+        width: 150px;
+    }
+    .second-anime {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .home-banner-text {
+        font-size: 6rem;
+        line-height: 90px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+  .text-biggy {
+    font-size: 2rem;
+  }
+  .home-banner-text {
+        font-size: 5rem;
+        line-height: 70px;
+    }
+    .first-anime {
+        width: 100px;
+    }
+    .second-anime {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+}
