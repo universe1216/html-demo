@@ -404,51 +404,6 @@
 
 <div class="cursor" id="cursor"></div>
 
-<script>
-    AOS.init();
-</script>
-
-    <script>
-        const cursor = document.querySelector('.cursor');
-        document.addEventListener('mousemove', (e) => {
-            cursor.style.left = e.clientX + 'px';
-            cursor.style.top = e.clientY + 'px';
-        })
-    </script>
-
-<script>
-  $(function() {
-    $(document).scroll(function() {
-      var $nav = $(".navbar-scroller");
-      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-    });
-  });
-</script>
-
-    <script>
-        $('.owl-location').owlCarousel({
-            loop: true,
-            margin: 10,
-            nav: true,
-            autoplay: true,
-            navText: [
-                '<i class="fa-solid fa-arrow-left-long"></i>',
-                '<i class="fa-solid fa-arrow-right-long"></i>'
-            ],
-            dots: false,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 1
-                },
-                1000: {
-                    items: 1
-                }
-            }
-        })
-    </script>
 </body>
 
 </html>

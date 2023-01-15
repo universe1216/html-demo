@@ -69,3 +69,50 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+AOS.init();
+
+const cursor = document.querySelector('.cursor');
+document.addEventListener('mousemove', (e) => {
+  cursor.style.left = e.clientX + 'px';
+  cursor.style.top = e.clientY + 'px';
+});
+
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".navbar-scroller");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+
+
+$('.owl-location').owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  autoplay: true,
+  navText: [
+    '<i class="fa-solid fa-arrow-left-long"></i>',
+    '<i class="fa-solid fa-arrow-right-long"></i>'
+  ],
+  dots: false,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 1
+    },
+    1000: {
+      items: 1
+    }
+  }
+});
+
+document.getElementById('playVid').onclick = function () {
+  document.getElementById('vid').play();
+};
+
+function pauseVid() {
+  document.getElementById('vid').pause();
+}
