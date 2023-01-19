@@ -3,7 +3,7 @@ new WOW().init();
 $(document).ready(function() {
     $(".servicesOne").mouseenter(function() {
         $("#services").css({
-            "background-image": "url('../images/service1.jpg')",
+            "background-image": "url('https://images.pexels.com/photos/3970330/pexels-photo-3970330.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')",
             "background-size": "cover",
             "transition": "0.6s ease"
         });
@@ -17,7 +17,7 @@ $(document).ready(function() {
     });
     $(".servicesTwo").mouseenter(function() {
         $("#services").css({
-            "background-image": "url('../images/service2.jpg')",
+            "background-image": "url('https://images.pexels.com/photos/4348401/pexels-photo-4348401.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')",
             "background-size": "cover",
             "transition": "0.6s ease"
         });
@@ -31,7 +31,7 @@ $(document).ready(function() {
     });
     $(".servicesThree").mouseenter(function() {
         $("#services").css({
-            "background-image": "url('../images/service3.jpg')",
+            "background-image": "url('https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')",
             "background-size": "cover",
             "transition": "0.6s ease"
         });
