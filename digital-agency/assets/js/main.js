@@ -3,7 +3,7 @@ new WOW().init();
 $(document).ready(function() {
     $(".servicesOne").mouseenter(function() {
         $("#services").css({
-            "background-image": "url('./images/service1.jpg')",
+            "background-image": "url('../images/service1.jpg')",
             "background-size": "cover",
             "transition": "0.6s ease"
         });
@@ -17,7 +17,7 @@ $(document).ready(function() {
     });
     $(".servicesTwo").mouseenter(function() {
         $("#services").css({
-            "background-image": "url('./images/service2.jpg')",
+            "background-image": "url('../images/service2.jpg')",
             "background-size": "cover",
             "transition": "0.6s ease"
         });
@@ -31,7 +31,7 @@ $(document).ready(function() {
     });
     $(".servicesThree").mouseenter(function() {
         $("#services").css({
-            "background-image": "url('./images/service3.jpg')",
+            "background-image": "url('../images/service3.jpg')",
             "background-size": "cover",
             "transition": "0.6s ease"
         });
