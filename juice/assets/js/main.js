@@ -1,22 +1,6 @@
 $(function () {
   "use strict";
 
-  //====== Magnific Popup
-
-  $(".video-popup").magnificPopup({
-    type: "iframe",
-    // other options
-  });
-
-  //===== Magnific Popup
-
-  $(".image-popup").magnificPopup({
-    type: "image",
-    gallery: {
-      enabled: true,
-    },
-  });
-
   ///===== Progress Bar
 
   if ($(".progress_line").length) {
@@ -50,48 +34,50 @@ $(function () {
       1200
     );
   });
+});
 
-  function navFunction(x) {
-    x.classList.toggle("change");
-  }
+function navFunction(x) {
+  x.classList.toggle("change");
+}
 
-  const btn = document.getElementById("btn");
-  const nav = document.getElementById("nav");
-  const navContent = document.getElementsByClassName("menulinks");
+const btn = document.getElementById("btn");
+const nav = document.getElementById("nav");
+const navContent = document.getElementsByClassName("menulinks");
 
-  btn.addEventListener("click", () => {
-    nav.classList.toggle("active");
-    btn.classList.toggle("active");
-  });
-  AOS.init();
-  var owl = $('.owl-carousel');
-  owl.owlCarousel({
-    loop: true,
-    nav: true,
-    animateOut: 'animate__fadeOutDown',
-    animateIn: 'animate__fadeInDown',
-    margin: 0,
-    items: 1,
-    navText: [
-      '<i class="fa-solid fa-angle-left"></i>',
-      '<i class="fa-solid fa-angle-right"></i>'
-    ],
-    responsive: {
-      0: {
-        items: 1
-      },
-      500: {
-        items: 1
-      },
-      1000: {
-        items: 1
-      },
-      1500: {
-        items: 1
-      },
-      2000: {
-        items: 1
-      }
+btn.addEventListener("click", () => {
+  nav.classList.toggle("active");
+  btn.classList.toggle("active");
+});
+AOS.init();
+Splitting();
+
+var owl = $('.owl-carousel');
+owl.owlCarousel({
+  loop: true,
+  nav: true,
+  animateOut: 'animate__fadeOutDown',
+  animateIn: 'animate__fadeInDown',
+  margin: 0,
+  items: 1,
+  navText: [
+    '<i class="fa-solid fa-angle-left"></i>',
+    '<i class="fa-solid fa-angle-right"></i>'
+  ],
+  responsive: {
+    0: {
+      items: 1
+    },
+    500: {
+      items: 1
+    },
+    1000: {
+      items: 1
+    },
+    1500: {
+      items: 1
+    },
+    2000: {
+      items: 1
     }
-  });
+  }
 });
