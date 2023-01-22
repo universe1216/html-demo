@@ -5,108 +5,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABC HOMES - P100 || HOME</title>
-    <!--====== Favicon Icon ======-->
-<link rel="shortcut icon" href="assets/images/logos/favicon.png" type="image/png">
-
-
-<!--====== Font Awesome CSS ======-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"  />
-<!--====== Bootstrap CSS ======-->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<!--====== Bootstrap CSS ======-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"  />
-
-<link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
-<link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
-
-
-<!--====== Style CSS ======-->
-<link rel="stylesheet" href="assets/css/style.css">
-<!--====== Responsive CSS ======-->
-<link rel="stylesheet" href="assets/css/responsive.css">
+    <title>SEAHOMES || HOME</title>
+    <link rel="shortcut icon" href="assets/images/logos/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body>
     <!--====== HEADER PART START ======-->
-<header id="topnav" class="navbar-scroller">
-    <nav class="h-100" aria-label="Main Header">
-        <div class="container h-100 nav-container">
-            <div class="d-flex justify-content-between align-items-center w-100 h-100 nav-items">
-                <div>
-                    <a class="fs-1" href="index.html">
-                        <img class="img-fluid logo" src="assets/images/logos/logo.png" alt="">
-                    </a>
-                </div>
-                <div>
-                    <!-- <button class="btn btn-light rounded-circle fs-1 nav-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasHeader" aria-controls="offcanvasHeader">
+    <header id="topnav" class="navbar-scroller">
+        <nav class="h-100" aria-label="Main Header">
+            <div class="container h-100 nav-container">
+                <div class="d-flex justify-content-between align-items-center w-100 h-100 nav-items">
+                    <div>
+                        <a class="fs-1" href="index.html">
+                            <img class="img-fluid logo" src="assets/images/logos/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <!-- <button class="btn btn-light rounded-circle fs-1 nav-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasHeader" aria-controls="offcanvasHeader">
                         <i class="fa-solid fa-bars"></i>
                     </button> -->
-                    <!-- <div class="menu">
+                        <!-- <div class="menu">
                         <div class="single-menu">☰</div>
                     </div> -->
-
-                </div>
-                <div style="min-width: 150px">
-                    <a href="contact.html" class="text-decoration-none fs-3 slide-vertical" data-splitting="">Contact Us</a>
+                    </div>
+                    <div style="min-width: 150px">
+                        <a href="contact.html" class="text-decoration-none fs-3 slide-vertical"
+                            data-splitting="">Contact Us</a>
+                    </div>
                 </div>
             </div>
+        </nav>
+    </header>
+
+    <div id="btn" class="toggle-button start-50 translate-middle-x" onclick="navFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+    </div>
+
+    <div id="nav" class="full-nav">
+        <div class="first">
+            <ul id="navtext">
+                <li class="menulinks" style="--i:1;">
+                    <a class="display-1 invert text-decoration-none slide-vertical" href="exteriors.html"
+                        data-splitting="">Exterior</a>
+                </li>
+                <li class="menulinks" style="--i:2;">
+                    <a class="display-1 invert text-decoration-none slide-vertical" href="interiors.html"
+                        data-splitting="">Interior</a>
+                </li>
+                <li class="menulinks" style="--i:3;">
+                    <a class="display-1 invert text-decoration-none slide-vertical" href="index.html#location"
+                        data-splitting="">Location</a>
+                </li>
+                <li class="menulinks" style="--i:4;">
+                    <a class="display-1 invert text-decoration-none slide-vertical" href="index.html#video"
+                        data-splitting="">Video</a>
+                </li>
+                <li class="menulinks" style="--i:5;">
+                    <a class="display-1 invert text-decoration-none slide-vertical" href="index.html#team"
+                        data-splitting="">Team</a>
+                </li>
+                <li class="menulinks" style="--i:6;">
+                    <a class="display-1 invert text-decoration-none slide-vertical" href="contact.html"
+                        data-splitting="">Contact</a>
+                </li>
+            </ul>
         </div>
-    </nav>
-</header>
-
-<div id="btn" class="toggle-button start-50 translate-middle-x" onclick="navFunction(this)">
-    <div class="bar1"></div>
-    <div class="bar2"></div>
-</div>
-
-<div id="nav" class="full-nav">
-    <div class="first">
-        <ul id="navtext">
-            <li class="menulinks" style="--i:1;">
-                <a class="display-1 invert text-decoration-none slide-vertical" href="exteriors.html" data-splitting="">Exterior</a>
-            </li>
-            <li class="menulinks" style="--i:2;">
-                <a class="display-1 invert text-decoration-none slide-vertical" href="interiors.html" data-splitting="">Interior</a>
-            </li>
-            <li class="menulinks" style="--i:3;">
-                <a class="display-1 invert text-decoration-none slide-vertical" href="index.html#location" data-splitting="">Location</a>
-            </li>
-            <li class="menulinks" style="--i:4;">
-                <a class="display-1 invert text-decoration-none slide-vertical" href="index.html#video" data-splitting="">Video</a>
-            </li>
-            <li class="menulinks" style="--i:5;">
-                <a class="display-1 invert text-decoration-none slide-vertical" href="index.html#team" data-splitting="">Team</a>
-            </li>
-            <li class="menulinks" style="--i:6;">
-                <a class="display-1 invert text-decoration-none slide-vertical" href="contact.html" data-splitting="">Contact</a>
-            </li>
-        </ul>
+        <div class="second">
+            <ul class="d-grid h-100" id="navtext">
+                <li class="menulinks" style="--i:1;">
+                    <img class="img-fluid logo" style="filter: invert(1);" src="assets/images/logos/logo.png" alt="">
+                </li>
+                <li class="menulinks" style="--i:2;">
+                    <h2 class="display-5 text-white">
+                        Sales Team
+                    </h2>
+                    <p><a class="fs-1 text-decoration-none" href="tel:+11234567890">Demi Lengar - 1234567890</a></p>
+                    <p><a class="fs-1 text-decoration-none" href="tel:+11234567890">Arron Weber - 1234567890</a></p>
+                </li>
+                <li class="menulinks" style="--i:3;">
+                    <a class="display-5" href="javascript:void(0)">4330 Woodside Circle,<br> Florida, USA</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="second">
-        <ul class="d-grid h-100" id="navtext">
-            <li class="menulinks" style="--i:1;">
-                <img class="img-fluid logo" style="filter: invert(1);" src="assets/images/logos/logo.png" alt="">
-            </li>
-            <li class="menulinks" style="--i:2;">
-                <h2 class="display-5 text-white">
-                    Sales Team
-                </h2>
-                <p><a class="fs-1 text-decoration-none" href="tel:+11234567890">Demi Lengar - 1234567890</a></p>
-                <p><a class="fs-1 text-decoration-none" href="tel:+11234567890">Arron Weber - 1234567890</a></p>
-            </li>
-            <li class="menulinks" style="--i:3;">
-                <a class="display-5" href="javascript:void(0)">4330 Woodside Circle,<br> Florida, USA</a>
-            </li>
-        </ul>
-    </div>
-</div>
 
-<!-- <div class="nav-area">
+    <!-- <div class="nav-area">
 
     <div class="box-area"></div>
     <div class="box-area"></div>
@@ -132,9 +127,9 @@
     </div>
 </div> -->
 
-<!-- offcanvas -->
+    <!-- offcanvas -->
 
-<!-- 
+    <!-- 
 
 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasHeader" aria-labelledby="offcanvasHeaderLabel">
     <div class="offcanvas-header">
@@ -203,14 +198,16 @@
         </div>
     </div>
 </div> -->
-
-
-<!--====== HEADER PART ENDS ======-->    <section class="banner-section position-relative">
+    <!--====== HEADER PART ENDS ======-->
+    <section class="banner-section position-relative">
         <div class="text-center py-10 position-absolute top-0 start-50 translate-middle-x">
             <h1 class="text-center fw-light fs-20 max-w-1000 m-auto lh-1">BEAUTY <br>OF THE SEA</h1>
-            <p class="text-center max-w-600 m-auto text-black fs-5">One of Florida’s most posh neighbourhoods is now home to an exclusive new development that fuses contemporary luxury with remarkable design.<br> Welcome to ABC Homes.</p>
+            <p class="text-center max-w-600 m-auto text-black fs-5">One of Florida’s most posh neighbourhoods is now
+                home to an exclusive new development that fuses contemporary luxury with remarkable design.<br> Welcome
+                to ABC Homes.</p>
             <div class="d-flex align-items-center justify-content-center">
-                <a href="contact.html" class="fs-3 slide-vertical main-button" data-splitting="">Contact</a> <i class="fa-solid fa-arrow-right arrow-padding"></i>
+                <a href="contact.html" class="fs-3 slide-vertical main-button" data-splitting="">Contact</a> <i
+                    class="fa-solid fa-arrow-right arrow-padding"></i>
             </div>
         </div>
         <div class="text-end w-100 pt-20">
@@ -225,23 +222,26 @@
             </div>
         </div>
     </section>
-
     <section class="video-sec bg-beige py-10">
         <div class="container-fluid">
             <div class="max-w-1000 mx-auto">
-                <p class="fs-3 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quo reiciendis, tempore, rerum adipisci dicta voluptates ipsum non impedit incidunt tempora molestiae temporibus tenetur similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolore est optio quam!</p>
+                <p class="fs-3 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quo
+                    reiciendis, tempore, rerum adipisci dicta voluptates ipsum non impedit incidunt tempora molestiae
+                    temporibus tenetur similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolore
+                    est optio quam!</p>
             </div>
             <div class="video position-relative" style="height: 300vh">
                 <div id="main-video" class="position-sticky top-0">
                     <img class="img-fluid border-white-5 video-thumb" src="assets/images/home/videobanner.jpg">
-                    <button class="btn btn-light btn-lg rounded-pill pb-0 d-flex position-absolute top-50 start-50 translate-middle">
-                        <a href="#" class="fs-3 slide-vertical main-button" data-splitting="">Play Video</a> <i class="fa-solid fa-play text-dark pt-play"></i>
+                    <button
+                        class="btn btn-light btn-lg rounded-pill pb-0 d-flex position-absolute top-50 start-50 translate-middle">
+                        <a href="#" class="fs-3 slide-vertical main-button" data-splitting="">Play Video</a> <i
+                            class="fa-solid fa-play text-dark pt-play"></i>
                     </button>
                 </div>
             </div>
         </div>
     </section>
-
     <section class="video-sec bg-beige py-5">
         <div class="container">
             <h2 class="display-1 fw-light fst-italic text-uppercase text-end box">Innovative Designs</h2>
@@ -280,49 +280,50 @@
             </div>
         </div>
     </section>
-
     <section class="video2-sec bg-beige py-5">
         <div class="container">
             <img class="img-fluid" src="assets/images/home/mid-banner.jpg" alt="video">
         </div>
     </section>
-
-
     <section class="dark-sec py-12" style="background: url('assets/images/home/bg-dark.png'); background-size: cover">
         <div class="container text-center">
-            <p class="fs-1 text-light fw-normal max-w-600 mx-auto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, dicta!</p>
+            <p class="fs-1 text-light fw-normal max-w-600 mx-auto">Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Voluptatum, dicta!</p>
             <button class="btn btn-light btn-lg rounded-pill pb-0 d-flex mx-auto">
-                <a href="contact.html" class="fs-3 slide-vertical main-button" data-splitting="">Contact</a> <i class="fa-solid fa-arrow-right pt-play"></i>
+                <a href="contact.html" class="fs-3 slide-vertical main-button" data-splitting="">Contact</a> <i
+                    class="fa-solid fa-arrow-right pt-play"></i>
             </button>
         </div>
     </section>
-
     <section class="bg-beige py-5 position-relative">
         <div class="container-fluid position-relative">
             <div class="text-title position-absolute top-50 start-50 translate-little pt-4">
                 <h2 class="display-1 fw-light fst-italic">Designed for<br> luxurious lifestyle</h2>
                 <div class=" max-w-450">
-                    <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui dolorum laborum veniam voluptatem esse error, impedit blanditiis sint cupiditate nobis amet ad consequatur ex molestiae pariatur deleniti odit perferendis eligendi! Inventore asperiores maiores magnam totam esse harum.</p>
+                    <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui dolorum laborum veniam
+                        voluptatem esse error, impedit blanditiis sint cupiditate nobis amet ad consequatur ex molestiae
+                        pariatur deleniti odit perferendis eligendi! Inventore asperiores maiores magnam totam esse
+                        harum.</p>
                     <div class="d-flex align-items-center justify-content-center">
-                        <a href="contact.html" class="fs-3 slide-vertical main-button" data-splitting="">Contact</a> <i class="fa-solid fa-arrow-right arrow-padding"></i>
+                        <a href="contact.html" class="fs-3 slide-vertical main-button" data-splitting="">Contact</a> <i
+                            class="fa-solid fa-arrow-right arrow-padding"></i>
                     </div>
                 </div>
             </div>
             <div class="row justify-content-between">
                 <div class="col-md-5 min-h-700 mb-20 ps-10">
-                    <img class="w-100 obj-fit min-h-700 rounded-circle-bottom-right" src="assets/images/home/designed-1.jpg" alt="1">
+                    <img class="w-100 obj-fit min-h-700 rounded-circle-bottom-right"
+                        src="assets/images/home/designed-1.jpg" alt="1">
                 </div>
                 <div class="col-md-4 min-h-700 mt-20 text-end pe-10">
-                    <img class="img-fluid obj-contain float-end max-h-300 position-relative" src="assets/images/home/designed-2.jpg" alt="2">
-                    <img class="img-fluid obj-contain float-start max-h-400 mt-negative-5" style="z-index: -1" src="assets/images/home/designed-3.jpg" alt="3">
+                    <img class="img-fluid obj-contain float-end max-h-300 position-relative"
+                        src="assets/images/home/designed-2.jpg" alt="2">
+                    <img class="img-fluid obj-contain float-start max-h-400 mt-negative-5" style="z-index: -1"
+                        src="assets/images/home/designed-3.jpg" alt="3">
                 </div>
             </div>
         </div>
     </section>
-
-
-    
-
     <section class="bg-beige py-5 position-relative">
         <div class="container">
             <div class="owl-carousel owl-slider owl-theme">
@@ -337,11 +338,8 @@
                 </div>
             </div>
         </div>
-
     </section>
-
     <!-- style="background:url('assets/images/home/background-img-testimonials.jpg')" -->
-
     <section class="py-10 position-relative">
         <div class="container">
             <div class="row">
@@ -349,7 +347,9 @@
                     <h2 class="display-1">At the seaside<br> full of life</h2>
                 </div>
                 <div class="col-md-5">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vitae eaque excepturi ullam totam asperiores sequi, doloremque vel laudantium! Itaque in animi assumenda consequatur vitae temporibus quis harum saepe perferendis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vitae eaque excepturi ullam totam
+                        asperiores sequi, doloremque vel laudantium! Itaque in animi assumenda consequatur vitae
+                        temporibus quis harum saepe perferendis.</p>
                 </div>
                 <div class="col-md-2">
                     <icons></icons>
@@ -379,7 +379,6 @@
             </div>
         </div>
     </section>
-
     <section class="bg-beige py-5">
         <!-- inspiration -->
         <div class="container">
@@ -387,27 +386,37 @@
                 <div class="col-md-6">
                     <div class="m-auto max-width-600 py-5">
                         <h2 class="display-1 fw-bold" data-aos="fade-up">Our Team</h2>
-                        <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem repellendus quas corrupti cumque dolorum sint magnam quasi! Lorem ipsum dolor sit amet.</p>
-                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                            <button class="btn text-start fs-1 py-2 border-dark border-0 border-bottom" id="soul-one" data-bs-toggle="pill" data-bs-target="#soul--one" type="button" role="tab" aria-controls="soul--one" aria-selected="true">
+                        <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem repellendus
+                            quas corrupti cumque dolorum sint magnam quasi! Lorem ipsum dolor sit amet.</p>
+                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                            aria-orientation="vertical">
+                            <button class="btn text-start fs-1 py-2 border-dark border-0 border-bottom" id="soul-one"
+                                data-bs-toggle="pill" data-bs-target="#soul--one" type="button" role="tab"
+                                aria-controls="soul--one" aria-selected="true">
                                 <div class="d-flex">
                                     <div class="me-1">Architect</div>
                                     <div class="me-1"><i class="fa-solid fa-arrow-right"></i> </div>
                                 </div>
                             </button>
-                            <button class="btn text-start fs-1 py-2 border-dark border-0 border-bottom" id="soul-two" data-bs-toggle="pill" data-bs-target="#soul--two" type="button" role="tab" aria-controls="soul--two" aria-selected="false">
+                            <button class="btn text-start fs-1 py-2 border-dark border-0 border-bottom" id="soul-two"
+                                data-bs-toggle="pill" data-bs-target="#soul--two" type="button" role="tab"
+                                aria-controls="soul--two" aria-selected="false">
                                 <div class="d-flex">
                                     <div class="me-1">Interior Designer</div>
                                     <div class="me-1"><i class="fa-solid fa-arrow-right"></i> </div>
                                 </div>
                             </button>
-                            <button class="btn text-start fs-1 py-2 border-dark border-0 border-bottom" id="soul-three" data-bs-toggle="pill" data-bs-target="#soul--three" type="button" role="tab" aria-controls="soul--three" aria-selected="false">
+                            <button class="btn text-start fs-1 py-2 border-dark border-0 border-bottom" id="soul-three"
+                                data-bs-toggle="pill" data-bs-target="#soul--three" type="button" role="tab"
+                                aria-controls="soul--three" aria-selected="false">
                                 <div class="d-flex">
                                     <div class="me-1">Landscape Architect</div>
                                     <div class="me-1"><i class="fa-solid fa-arrow-right"></i> </div>
                                 </div>
                             </button>
-                            <button class="btn text-start fs-1 py-2 border-dark border-0 border-bottom" id="soul-four" data-bs-toggle="pill" data-bs-target="#soul--four" type="button" role="tab" aria-controls="soul--four" aria-selected="false">
+                            <button class="btn text-start fs-1 py-2 border-dark border-0 border-bottom" id="soul-four"
+                                data-bs-toggle="pill" data-bs-target="#soul--four" type="button" role="tab"
+                                aria-controls="soul--four" aria-selected="false">
                                 <div class="d-flex">
                                     <div class="me-1">Property Developer</div>
                                     <div class="me-1"><i class="fa-solid fa-arrow-right"></i> </div>
@@ -418,25 +427,34 @@
                 </div>
                 <div class="col-md-6">
                     <div class="tab-content" id="v-pills-tabContent" data-aos="fade-up">
-                        <div class="tab-pane fade show active" id="soul--one" role="tabpanel" aria-labelledby="soul--one">
+                        <div class="tab-pane fade show active" id="soul--one" role="tabpanel"
+                            aria-labelledby="soul--one">
                             <img src="assets/images/home/team-1.jpg" alt="team">
                             <h4>Diana Livingstone</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vitae eaque excepturi ullam totam asperiores sequi, doloremque vel laudantium! Itaque in animi assumenda consequatur vitae temporibus quis harum saepe perferendis.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vitae eaque excepturi ullam
+                                totam asperiores sequi, doloremque vel laudantium! Itaque in animi assumenda consequatur
+                                vitae temporibus quis harum saepe perferendis.</p>
                         </div>
                         <div class="tab-pane fade" id="soul--two" role="tabpanel" aria-labelledby="soul-two">
                             <img src="assets/images/home/team-2.jpg" alt="team">
                             <h4>Mike Baron</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vitae eaque excepturi ullam totam asperiores sequi, doloremque vel laudantium! Itaque in animi assumenda consequatur vitae temporibus quis harum saepe perferendis.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vitae eaque excepturi ullam
+                                totam asperiores sequi, doloremque vel laudantium! Itaque in animi assumenda consequatur
+                                vitae temporibus quis harum saepe perferendis.</p>
                         </div>
                         <div class="tab-pane fade" id="soul--three" role="tabpanel" aria-labelledby="soul-three">
                             <img src="assets/images/home/team-3.jpg" alt="team">
                             <h4>Adam Jefferson</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vitae eaque excepturi ullam totam asperiores sequi, doloremque vel laudantium! Itaque in animi assumenda consequatur vitae temporibus quis harum saepe perferendis.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vitae eaque excepturi ullam
+                                totam asperiores sequi, doloremque vel laudantium! Itaque in animi assumenda consequatur
+                                vitae temporibus quis harum saepe perferendis.</p>
                         </div>
                         <div class="tab-pane fade" id="soul--four" role="tabpanel" aria-labelledby="soul-four">
                             <img src="assets/images/home/team-4.jpg" alt="team">
                             <h4>Abby Stone</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vitae eaque excepturi ullam totam asperiores sequi, doloremque vel laudantium! Itaque in animi assumenda consequatur vitae temporibus quis harum saepe perferendis.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vitae eaque excepturi ullam
+                                totam asperiores sequi, doloremque vel laudantium! Itaque in animi assumenda consequatur
+                                vitae temporibus quis harum saepe perferendis.</p>
                         </div>
                     </div>
                 </div>
@@ -444,9 +462,9 @@
         </div>
         <!-- inspiration -->
     </section>
-
     <section style="height: 100vh; width: 100%" class="">
-        <div class="position-relative" style="height: 100vh; width: 100%; background: url('assets/images/home/city-view.jpg'); background-size: cover">
+        <div class="position-relative"
+            style="height: 100vh; width: 100%; background: url('assets/images/home/city-view.jpg'); background-size: cover">
             <div class="position-absolute location-container" data-aos="zoom-in">
                 <p class="slide-vertical invert fs-1" data-splitting="">ABC HOMES</p>
                 <div style="width: 2px; height: 20px; background: white"></div>
@@ -454,24 +472,23 @@
             </div>
         </div>
     </section>
-
-
     <section class="bg-beige">
         <div class="py-20 d-flex flex-column align-items-center justify-content-center">
             <h2 class="display-1" data-aos="fade-up">No One Designs<br> like ABC Homes</h2>
             <div class="d-flex align-items-center justify-content-center pt-4" data-aos="fade-up">
-                <a href="contact.html" class="fs-3 slide-vertical main-button" data-splitting="">Contact</a> <i class="fa-solid fa-arrow-right arrow-padding"></i>
+                <a href="contact.html" class="fs-3 slide-vertical main-button" data-splitting="">Contact</a> <i
+                    class="fa-solid fa-arrow-right arrow-padding"></i>
             </div>
         </div>
     </section>
-
-
     <!-- Video -->
-    <div class="modal fade" id="Video" tabindex="-1" aria-labelledby="videoLabel" aria-hidden="true" onclick="pauseVid()">
+    <div class="modal fade" id="Video" tabindex="-1" aria-labelledby="videoLabel" aria-hidden="true"
+        onclick="pauseVid()">
         <div class="modal-dialog modal-xl mt-15">
             <div class="modal-content bg-transparent border-0">
                 <div class="modal-header bg-transparent border-0 p-0 justify-content-end">
-                    <button type="button" class="btn fs-1 text-white p-0 lh-0" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                    <button type="button" class="btn fs-1 text-white p-0 lh-0" data-bs-dismiss="modal"
+                        aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
                 </div>
                 <div class="modal-body bg-transparent px-0">
                     <video id="vid" class="w-100" controls="" loop="" preload="">
@@ -482,152 +499,71 @@
         </div>
     </div>
 
-    <footer class="bg-footer pt-5 pb-3" style="background: url('assets/images/home/bg-dark.png'); background-size: cover;">
-    <div class="container-fluid position-relative">
-        <div class="text-title position-absolute top-50 start-50 pt-0 translate-middle" style="z-index: 10" data-aos="fade-down">
-            <h2 class="fs-20 text-white text-center text-shadow" style="line-height: 0.9">DESIGNED FOR THE SEA LIFE</h2>
-        </div>
+    <footer class="bg-footer pt-5 pb-3"
+        style="background: url('assets/images/home/bg-dark.png'); background-size: cover;">
+        <div class="container-fluid position-relative">
+            <div class="text-title position-absolute top-50 start-50 pt-0 translate-middle" style="z-index: 10"
+                data-aos="fade-down">
+                <h2 class="fs-20 text-white text-center text-shadow" style="line-height: 0.9">DESIGNED FOR THE SEA LIFE
+                </h2>
+            </div>
 
-        <div class="row justify-content-between">
-            <div class="col-md-4 pb-12 ps-10">
-                <img class="w-100 h-90 obj-fit rounded-circle-bottom-right" src="assets/images/home/footer-1.jpg" alt="1" data-aos="fade-down">
-            </div>
-            <div class="col-md-4 pt-12 text-end pe-10">
-                <img class="w-100 h-90 obj-fit rounded-circle-top-left" src="assets/images/home/footer-2.jpg" alt="2" data-aos="fade-up">
-            </div>
-        </div>
-    </div>
-    <div class="container mt-5">
-        <div class="text-center">
-            <p class="fs-4 text-secondary" data-aos="fade-up">WHERE TO?</p>
-            <ul class="list-unstyled d-flex flex-wrap justify-content-center" data-aos="fade-up" data-aos-duration="1000">
-                <li class="px-2"><a class="text-white text-uppercase text-decoration-none cool-link" href="exteriors.html">Exterior</a></li>
-                <li class="px-2"><a class="text-white text-uppercase text-decoration-none cool-link" href="interiors.html">Interior</a></li>
-                <li class="px-2"><a class="text-white text-uppercase text-decoration-none cool-link" href="#location">Location</a></li>
-                <li class="px-2"><a class="text-white text-uppercase text-decoration-none cool-link" href="#video">Video</a></li>
-                <li class="px-2"><a class="text-white text-uppercase text-decoration-none cool-link" href="#">Team</a></li>
-                <li class="px-2"><a class="text-white text-uppercase text-decoration-none cool-link" href="contact.html">Enquire</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="container position-relative mb-5" data-aos="fade-up" data-aos-duration="1500">
-        <div class="d-flex flex-wrap justify-content-between text-secondary fs-5 align-items-center">
-            <div>
-                Designed by <a target="_blank" class="text-decoration-none text-light" href="https://github.com/ShubhamSingh1112">Shubham Singh</a>
-            </div>
-            <div>
-                <img class="img-fluid" src="assets/images/logos/logo.png" style="filter: invert(1)" alt="">
-            </div>
-            <div>
-                &copy; 2022 P100 Decor - All rights reserved.
+            <div class="row justify-content-between">
+                <div class="col-md-4 pb-12 ps-10">
+                    <img class="w-100 h-90 obj-fit rounded-circle-bottom-right" src="assets/images/home/footer-1.jpg"
+                        alt="1" data-aos="fade-down">
+                </div>
+                <div class="col-md-4 pt-12 text-end pe-10">
+                    <img class="w-100 h-90 obj-fit rounded-circle-top-left" src="assets/images/home/footer-2.jpg"
+                        alt="2" data-aos="fade-up">
+                </div>
             </div>
         </div>
-    </div>
-</footer>
-
-<button onclick="topFunction()" id="topBtn" title="Back To Top">
-    <div>BACK TO TOP</div>
-</button>
-    <!--====== Jquery js ======-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-
-
-<!--====== Fontawesome ======-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-
-<script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
-<script>
-  Splitting();
-</script>
-
-<!--====== wow js ======-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-<!--====== Main js ======-->
-<script src="assets/js/main.js"></script>
-
-<script>
-  AOS.init();
-</script>
-
-<script>
-  function navFunction(x) {
-    x.classList.toggle("change");
-  }
-
-  const btn = document.getElementById("btn");
-  const nav = document.getElementById("nav");
-
-  btn.addEventListener("click", () => {
-    nav.classList.toggle("active");
-    btn.classList.toggle("active");
-  });
-</script>
-    <script>
-        document.getElementById('playVid').onclick = function() {
-            document.getElementById('vid').play();
-        };
-
-        function pauseVid() {
-            document.getElementById('vid').pause();
-        }
-    </script>
-    <script>
-        $('.owl-members').owlCarousel({
-            loop: true,
-            margin: 20,
-            nav: true,
-            navText: [
-                '<i class="fa-solid fa-arrow-left"></i>',
-                '<i class="fa-solid fa-arrow-right"></i>'
-            ],
-            dots: false,
-            center: true,
-            autoplay: true,
-            items: 2
-        });
-    </script>
-
-    <script>
-        $('.owl-slider').owlCarousel({
-            loop: true,
-            margin: 20,
-            nav: true,
-            navText: [
-                '<i class="fa-solid fa-arrow-left"></i>',
-                '<i class="fa-solid fa-arrow-right"></i>'
-            ],
-            dots: false,
-            center: true,
-            autoplay: false,
-            items: 1
-        });
-    </script>
-
-    <script>
-        const move = document.querySelector('.box');
-        const moveTwo = document.querySelector('.boxTwo');
-        window.addEventListener('scroll', () => {
-            const scrolled = window.scrollY;
-            const val = scrolled * 0.2;
-            move.style.transform = `translateX(${-0.05 * val}%)`;
-            moveTwo.style.transform = `translateX(${0.05 * val}%)`;
-        });
-    </script>
-
-    <script>
-        var myVid = document.querySelector('.video-thumb');
-        window.addEventListener('scroll', () => {
-            var scrolled = window.scrollY - myVid.clientHeight;
-            var val = scrolled * 0.25;
-            myVid.style.transform = `scale(${-0.09 * val}%)`;
-            myVid.style.borderRadius = `${0.06 * val}%`;
-        });
-    </script>
-
+        <div class="container mt-5">
+            <div class="text-center">
+                <p class="fs-4 text-secondary" data-aos="fade-up">WHERE TO?</p>
+                <ul class="list-unstyled d-flex flex-wrap justify-content-center" data-aos="fade-up"
+                    data-aos-duration="1000">
+                    <li class="px-2"><a class="text-white text-uppercase text-decoration-none cool-link"
+                            href="exteriors.html">Exterior</a></li>
+                    <li class="px-2"><a class="text-white text-uppercase text-decoration-none cool-link"
+                            href="interiors.html">Interior</a></li>
+                    <li class="px-2"><a class="text-white text-uppercase text-decoration-none cool-link"
+                            href="#location">Location</a></li>
+                    <li class="px-2"><a class="text-white text-uppercase text-decoration-none cool-link"
+                            href="#video">Video</a></li>
+                    <li class="px-2"><a class="text-white text-uppercase text-decoration-none cool-link"
+                            href="#">Team</a></li>
+                    <li class="px-2"><a class="text-white text-uppercase text-decoration-none cool-link"
+                            href="contact.html">Enquire</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container position-relative mb-5" data-aos="fade-up" data-aos-duration="1500">
+            <div class="d-flex flex-wrap justify-content-between text-secondary fs-5 align-items-center">
+                <div>
+                    Designed by <a target="_blank" class="text-decoration-none text-light"
+                        href="https://github.com/ShubhamSingh1112">Shubham Singh</a>
+                </div>
+                <div>
+                    <img class="img-fluid" src="assets/images/logos/logo.png" style="filter: invert(1)" alt="">
+                </div>
+                <div>
+                    &copy; 2022 P100 Decor - All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <button onclick="topFunction()" id="topBtn" title="Back To Top">
+        <div>BACK TO TOP</div>
+    </button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

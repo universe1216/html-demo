@@ -5,108 +5,117 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABC HOMES - P100 || INTERIORS</title>
+    <title>SEAHOMES || INTERIORS</title>
     <!--====== Favicon Icon ======-->
-<link rel="shortcut icon" href="assets/images/logos/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="assets/images/logos/favicon.png" type="image/png">
 
 
-<!--====== Font Awesome CSS ======-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"  />
-<!--====== Bootstrap CSS ======-->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--====== Font Awesome CSS ======-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <!--====== Bootstrap CSS ======-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<!--====== Bootstrap CSS ======-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"  />
+    <!--====== Bootstrap CSS ======-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 
-<link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
-<link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
 
-<!--====== Style CSS ======-->
-<link rel="stylesheet" href="assets/css/style.css">
-<!--====== Responsive CSS ======-->
-<link rel="stylesheet" href="assets/css/responsive.css">
+    <!--====== Style CSS ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--====== Responsive CSS ======-->
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body>
     <!--====== HEADER PART START ======-->
-<header id="topnav" class="navbar-scroller">
-    <nav class="h-100" aria-label="Main Header">
-        <div class="container h-100 nav-container">
-            <div class="d-flex justify-content-between align-items-center w-100 h-100 nav-items">
-                <div>
-                    <a class="fs-1" href="interiors.html">
-                        <img class="img-fluid logo" src="assets/images/logos/logo.png" alt="">
-                    </a>
-                </div>
-                <div>
-                    <!-- <button class="btn btn-light rounded-circle fs-1 nav-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasHeader" aria-controls="offcanvasHeader">
+    <header id="topnav" class="navbar-scroller">
+        <nav class="h-100" aria-label="Main Header">
+            <div class="container h-100 nav-container">
+                <div class="d-flex justify-content-between align-items-center w-100 h-100 nav-items">
+                    <div>
+                        <a class="fs-1" href="interiors.html">
+                            <img class="img-fluid logo" src="assets/images/logos/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <!-- <button class="btn btn-light rounded-circle fs-1 nav-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasHeader" aria-controls="offcanvasHeader">
                         <i class="fa-solid fa-bars"></i>
                     </button> -->
-                    <!-- <div class="menu">
+                        <!-- <div class="menu">
                         <div class="single-menu">☰</div>
                     </div> -->
 
-                </div>
-                <div style="min-width: 150px">
-                    <a href="contact.html" class="text-decoration-none fs-3 slide-vertical" data-splitting="">Contact Us</a>
+                    </div>
+                    <div style="min-width: 150px">
+                        <a href="contact.html" class="text-decoration-none fs-3 slide-vertical"
+                            data-splitting="">Contact Us</a>
+                    </div>
                 </div>
             </div>
+        </nav>
+    </header>
+
+    <div id="btn" class="toggle-button start-50 translate-middle-x" onclick="navFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+    </div>
+
+    <div id="nav" class="full-nav">
+        <div class="first">
+            <ul id="navtext">
+                <li class="menulinks" style="--i:1;">
+                    <a class="display-1 invert text-decoration-none slide-vertical" href="exteriors.html"
+                        data-splitting="">Exterior</a>
+                </li>
+                <li class="menulinks" style="--i:2;">
+                    <a class="display-1 invert text-decoration-none slide-vertical" href="interiors.html"
+                        data-splitting="">Interior</a>
+                </li>
+                <li class="menulinks" style="--i:3;">
+                    <a class="display-1 invert text-decoration-none slide-vertical" href="index.html#location"
+                        data-splitting="">Location</a>
+                </li>
+                <li class="menulinks" style="--i:4;">
+                    <a class="display-1 invert text-decoration-none slide-vertical" href="index.html#video"
+                        data-splitting="">Video</a>
+                </li>
+                <li class="menulinks" style="--i:5;">
+                    <a class="display-1 invert text-decoration-none slide-vertical" href="index.html#team"
+                        data-splitting="">Team</a>
+                </li>
+                <li class="menulinks" style="--i:6;">
+                    <a class="display-1 invert text-decoration-none slide-vertical" href="contact.html"
+                        data-splitting="">Contact</a>
+                </li>
+            </ul>
         </div>
-    </nav>
-</header>
-
-<div id="btn" class="toggle-button start-50 translate-middle-x" onclick="navFunction(this)">
-    <div class="bar1"></div>
-    <div class="bar2"></div>
-</div>
-
-<div id="nav" class="full-nav">
-    <div class="first">
-        <ul id="navtext">
-            <li class="menulinks" style="--i:1;">
-                <a class="display-1 invert text-decoration-none slide-vertical" href="exteriors.html" data-splitting="">Exterior</a>
-            </li>
-            <li class="menulinks" style="--i:2;">
-                <a class="display-1 invert text-decoration-none slide-vertical" href="interiors.html" data-splitting="">Interior</a>
-            </li>
-            <li class="menulinks" style="--i:3;">
-                <a class="display-1 invert text-decoration-none slide-vertical" href="index.html#location" data-splitting="">Location</a>
-            </li>
-            <li class="menulinks" style="--i:4;">
-                <a class="display-1 invert text-decoration-none slide-vertical" href="index.html#video" data-splitting="">Video</a>
-            </li>
-            <li class="menulinks" style="--i:5;">
-                <a class="display-1 invert text-decoration-none slide-vertical" href="index.html#team" data-splitting="">Team</a>
-            </li>
-            <li class="menulinks" style="--i:6;">
-                <a class="display-1 invert text-decoration-none slide-vertical" href="contact.html" data-splitting="">Contact</a>
-            </li>
-        </ul>
+        <div class="second">
+            <ul class="d-grid h-100" id="navtext">
+                <li class="menulinks" style="--i:1;">
+                    <img class="img-fluid logo" style="filter: invert(1);" src="assets/images/logos/logo.png" alt="">
+                </li>
+                <li class="menulinks" style="--i:2;">
+                    <h2 class="display-5 text-white">
+                        Sales Team
+                    </h2>
+                    <p><a class="fs-1 text-decoration-none" href="tel:+11234567890">Demi Lengar - 1234567890</a></p>
+                    <p><a class="fs-1 text-decoration-none" href="tel:+11234567890">Arron Weber - 1234567890</a></p>
+                </li>
+                <li class="menulinks" style="--i:3;">
+                    <a class="display-5" href="javascript:void(0)">4330 Woodside Circle,<br> Florida, USA</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="second">
-        <ul class="d-grid h-100" id="navtext">
-            <li class="menulinks" style="--i:1;">
-                <img class="img-fluid logo" style="filter: invert(1);" src="assets/images/logos/logo.png" alt="">
-            </li>
-            <li class="menulinks" style="--i:2;">
-                <h2 class="display-5 text-white">
-                    Sales Team
-                </h2>
-                <p><a class="fs-1 text-decoration-none" href="tel:+11234567890">Demi Lengar - 1234567890</a></p>
-                <p><a class="fs-1 text-decoration-none" href="tel:+11234567890">Arron Weber - 1234567890</a></p>
-            </li>
-            <li class="menulinks" style="--i:3;">
-                <a class="display-5" href="javascript:void(0)">4330 Woodside Circle,<br> Florida, USA</a>
-            </li>
-        </ul>
-    </div>
-</div>
 
-<!-- <div class="nav-area">
+    <!-- <div class="nav-area">
 
     <div class="box-area"></div>
     <div class="box-area"></div>
@@ -132,9 +141,9 @@
     </div>
 </div> -->
 
-<!-- offcanvas -->
+    <!-- offcanvas -->
 
-<!-- 
+    <!-- 
 
 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasHeader" aria-labelledby="offcanvasHeaderLabel">
     <div class="offcanvas-header">
@@ -205,9 +214,12 @@
 </div> -->
 
 
-<!--====== HEADER PART ENDS ======-->    <section class="banner-section position-relative w-100 min-vh-100" style="background: url('./assets/images/interiors/Banner.jpg'); background-size: cover; margin-top: -150px; background-attachment: fixed;">
+    <!--====== HEADER PART ENDS ======-->
+    <section class="banner-section position-relative w-100 min-vh-100"
+        style="background: url('./assets/images/interiors/Banner.jpg'); background-size: cover; margin-top: -150px; background-attachment: fixed;">
         <div class="text-center py-20 position-absolute top-0 start-50 translate-middle-x w-100">
-            <h1 class="text-center text-light text-shadow-light fw-light fs-20 m-auto lh-1">HOMES THAT <br>DEFINE LUXURY</h1>
+            <h1 class="text-center text-light text-shadow-light fw-light fs-20 m-auto lh-1">HOMES THAT <br>DEFINE LUXURY
+            </h1>
         </div>
         <div class="scroll-down top-100 start-50 translate-middle" style="filter: invert(1); margin-top: -65px">
             <div class="scroll-down-item">
@@ -222,7 +234,10 @@
     <section class="bg-beige py-10">
         <div class="container-fluid">
             <div class="max-w-1000 mx-auto">
-                <p class="fs-3 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quo reiciendis, tempore, rerum adipisci dicta voluptates ipsum non impedit incidunt tempora molestiae temporibus tenetur similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolore est optio quam!</p>
+                <p class="fs-3 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quo
+                    reiciendis, tempore, rerum adipisci dicta voluptates ipsum non impedit incidunt tempora molestiae
+                    temporibus tenetur similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolore
+                    est optio quam!</p>
             </div>
             <div class="row m-0 align-items-center">
                 <div class="col-lg-8 col-md-6 position-relative h-100">
@@ -243,7 +258,8 @@
                     <h2 class="display-3">Spacious and breezy, ABC Homes Grand suites.</h2>
                 </div>
                 <div class="col-lg-4">
-                    <p class="lead">Extraordinary, mindblowing, divine experience that is everlasting in these calming spaces that take an ephemeral time to be built.</p>
+                    <p class="lead">Extraordinary, mindblowing, divine experience that is everlasting in these calming
+                        spaces that take an ephemeral time to be built.</p>
                 </div>
             </div>
         </div>
@@ -269,7 +285,9 @@
 
     <section class="bg-beige py-10">
         <div class="container pb-10">
-            <p class="max-w-1000 fs-3 fw-light text-center mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, beatae ipsum! Mollitia amet velit voluptate nemo, culpa quae quidem enim ipsa, consequuntur voluptatum optio nisi distinctio qui nobis natus corporis?</p>
+            <p class="max-w-1000 fs-3 fw-light text-center mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Suscipit, beatae ipsum! Mollitia amet velit voluptate nemo, culpa quae quidem enim ipsa,
+                consequuntur voluptatum optio nisi distinctio qui nobis natus corporis?</p>
         </div>
         <div class="container">
             <div class="row">
@@ -286,13 +304,14 @@
     <section class="bg-beige py-10">
         <div class="container">
             <div class="row justify-content-end">
-            <div class="col-md-12 ps-0">
+                <div class="col-md-12 ps-0">
                     <img class="img-fluid mb-3" src="assets/images/interiors/1.jpg" alt="Interior">
                 </div>
                 <div class="col-md-4">
                     <img class="img-fluid mb-3" src="assets/images/interiors/2.jpg" alt="Interior">
                     <p class="mt-5 lead">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident odio soluta facere cum corrupti, officiis vero voluptates quibusdam, laboriosam natus asperiores odit eum.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident odio soluta facere cum
+                        corrupti, officiis vero voluptates quibusdam, laboriosam natus asperiores odit eum.
                     </p>
                 </div>
                 <div class="col-md-6">
@@ -314,7 +333,8 @@
                         <p>KEEP EXPLORING</p>
                         <h2 class="py-2 fs-15">INTERIOR</h2>
                         <div class="py-2 d-flex align-items-center justify-content-center">
-                            <a href="contact.html" class="fs-3 slide-vertical main-button" data-splitting="">EXPLORE</a> <i class="fa-solid fa-arrow-right arrow-padding"></i>
+                            <a href="contact.html" class="fs-3 slide-vertical main-button" data-splitting="">EXPLORE</a>
+                            <i class="fa-solid fa-arrow-right arrow-padding"></i>
                         </div>
                     </div>
                 </div>
@@ -322,11 +342,12 @@
                     <div class="vr h-100"></div>
                 </div>
                 <div class="col-md-5 d-flex align-items-center justify-content-center">
-                <div class="division text-center">
+                    <div class="division text-center">
                         <p>KEEP EXPLORING</p>
                         <h2 class="py-2 fs-15">CONTACT</h2>
                         <div class="py-2 d-flex align-items-center justify-content-center">
-                            <a href="contact.html" class="fs-3 slide-vertical main-button" data-splitting="">CONTACT</a> <i class="fa-solid fa-arrow-right arrow-padding"></i>
+                            <a href="contact.html" class="fs-3 slide-vertical main-button" data-splitting="">CONTACT</a>
+                            <i class="fa-solid fa-arrow-right arrow-padding"></i>
                         </div>
                     </div>
                 </div>
@@ -334,90 +355,73 @@
         </div>
     </section>
 
-    <footer class="bg-footer pt-5 pb-3" style="background: url('assets/images/home/bg-dark.png'); background-size: cover;">
-    <div class="container-fluid position-relative">
-        <div class="text-title position-absolute top-50 start-50 pt-0 translate-middle" style="z-index: 10" data-aos="fade-down">
-            <h2 class="fs-20 text-white text-center text-shadow" style="line-height: 0.9">DESIGNED FOR THE SEA LIFE</h2>
-        </div>
+    <footer class="bg-footer pt-5 pb-3"
+        style="background: url('assets/images/home/bg-dark.png'); background-size: cover;">
+        <div class="container-fluid position-relative">
+            <div class="text-title position-absolute top-50 start-50 pt-0 translate-middle" style="z-index: 10"
+                data-aos="fade-down">
+                <h2 class="fs-20 text-white text-center text-shadow" style="line-height: 0.9">DESIGNED FOR THE SEA LIFE
+                </h2>
+            </div>
 
-        <div class="row justify-content-between">
-            <div class="col-md-4 pb-12 ps-10">
-                <img class="w-100 h-90 obj-fit rounded-circle-bottom-right" src="assets/images/home/footer-1.jpg" alt="1" data-aos="fade-down">
-            </div>
-            <div class="col-md-4 pt-12 text-end pe-10">
-                <img class="w-100 h-90 obj-fit rounded-circle-top-left" src="assets/images/home/footer-2.jpg" alt="2" data-aos="fade-up">
-            </div>
-        </div>
-    </div>
-    <div class="container mt-5">
-        <div class="text-center">
-            <p class="fs-4 text-secondary" data-aos="fade-up">WHERE TO?</p>
-            <ul class="list-unstyled d-flex flex-wrap justify-content-center" data-aos="fade-up" data-aos-duration="1000">
-                <li class="px-2"><a class="text-white text-uppercase text-decoration-none cool-link" href="exteriors.html">Exterior</a></li>
-                <li class="px-2"><a class="text-white text-uppercase text-decoration-none cool-link" href="interiors.html">Interior</a></li>
-                <li class="px-2"><a class="text-white text-uppercase text-decoration-none cool-link" href="#location">Location</a></li>
-                <li class="px-2"><a class="text-white text-uppercase text-decoration-none cool-link" href="#video">Video</a></li>
-                <li class="px-2"><a class="text-white text-uppercase text-decoration-none cool-link" href="#">Team</a></li>
-                <li class="px-2"><a class="text-white text-uppercase text-decoration-none cool-link" href="contact.html">Enquire</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="container position-relative mb-5" data-aos="fade-up" data-aos-duration="1500">
-        <div class="d-flex flex-wrap justify-content-between text-secondary fs-5 align-items-center">
-            <div>
-                Designed by <a target="_blank" class="text-decoration-none text-light" href="https://github.com/ShubhamSingh1112">Shubham Singh</a>
-            </div>
-            <div>
-                <img class="img-fluid" src="assets/images/logos/logo.png" style="filter: invert(1)" alt="">
-            </div>
-            <div>
-                &copy; 2022 P100 Decor - All rights reserved.
+            <div class="row justify-content-between">
+                <div class="col-md-4 pb-12 ps-10">
+                    <img class="w-100 h-90 obj-fit rounded-circle-bottom-right" src="assets/images/home/footer-1.jpg"
+                        alt="1" data-aos="fade-down">
+                </div>
+                <div class="col-md-4 pt-12 text-end pe-10">
+                    <img class="w-100 h-90 obj-fit rounded-circle-top-left" src="assets/images/home/footer-2.jpg"
+                        alt="2" data-aos="fade-up">
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+        <div class="container mt-5">
+            <div class="text-center">
+                <p class="fs-4 text-secondary" data-aos="fade-up">WHERE TO?</p>
+                <ul class="list-unstyled d-flex flex-wrap justify-content-center" data-aos="fade-up"
+                    data-aos-duration="1000">
+                    <li class="px-2"><a class="text-white text-uppercase text-decoration-none cool-link"
+                            href="exteriors.html">Exterior</a></li>
+                    <li class="px-2"><a class="text-white text-uppercase text-decoration-none cool-link"
+                            href="interiors.html">Interior</a></li>
+                    <li class="px-2"><a class="text-white text-uppercase text-decoration-none cool-link"
+                            href="#location">Location</a></li>
+                    <li class="px-2"><a class="text-white text-uppercase text-decoration-none cool-link"
+                            href="#video">Video</a></li>
+                    <li class="px-2"><a class="text-white text-uppercase text-decoration-none cool-link"
+                            href="#">Team</a></li>
+                    <li class="px-2"><a class="text-white text-uppercase text-decoration-none cool-link"
+                            href="contact.html">Enquire</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container position-relative mb-5" data-aos="fade-up" data-aos-duration="1500">
+            <div class="d-flex flex-wrap justify-content-between text-secondary fs-5 align-items-center">
+                <div>
+                    Designed by <a target="_blank" class="text-decoration-none text-light"
+                        href="https://github.com/ShubhamSingh1112">Shubham Singh</a>
+                </div>
+                <div>
+                    <img class="img-fluid" src="assets/images/logos/logo.png" style="filter: invert(1)" alt="">
+                </div>
+                <div>
+                    &copy; 2022 P100 Decor - All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
 
-<button onclick="topFunction()" id="topBtn" title="Back To Top">
-    <div>BACK TO TOP</div>
-</button>
-    <!--====== Jquery js ======-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <button onclick="topFunction()" id="topBtn" title="Back To Top">
+        <div>BACK TO TOP</div>
+    </button>
 
-
-<!--====== Fontawesome ======-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-
-<script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
-<script>
-  Splitting();
-</script>
-
-<!--====== wow js ======-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-<!--====== Main js ======-->
-<script src="assets/js/main.js"></script>
-
-<script>
-  AOS.init();
-</script>
-
-<script>
-  function navFunction(x) {
-    x.classList.toggle("change");
-  }
-
-  const btn = document.getElementById("btn");
-  const nav = document.getElementById("nav");
-
-  btn.addEventListener("click", () => {
-    nav.classList.toggle("active");
-    btn.classList.toggle("active");
-  });
-</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
