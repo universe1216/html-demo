@@ -6,944 +6,912 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>100 Tiles</title>
-    <!--====== Favicon Icon ======-->
-<link rel="shortcut icon" href="assets/images/logos/logofavicon.png" type="image/png">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
-<!--====== Font Awesome CSS ======-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"  />
-<!--====== Bootstrap CSS ======-->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<!--====== Bootstrap CSS ======-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"  />
-
-<!-- responsive css -->
-   <link rel="stylesheet" href="../npm/%40fancyapps/ui/dist/fancybox.css">
-
-<!--Owl Carousel -->
-<link rel="stylesheet" href="assets/css/owlcarousel/owl.carousel.min.css">
-<link rel="stylesheet" href="assets/css/owlcarousel/owl.theme.default.min.css">
-
-<!--====== Style CSS ======-->
-<link rel="stylesheet" href="assets/css/style.css">
-<!--====== Responsive CSS ======-->
-<link rel="stylesheet" href="assets/css/responsive.css"></head>
-
-<style>
-
-.preloader {
-   position: fixed;
-   left: 0px;
-   top: 0px;
-   width: 100%;
-   height: 100%;
-   z-index: 999999;
-   background-color: #000;
-   background-position: center center;
-   background-repeat: no-repeat;
-   background-image: url('assets/images/logos/logo.gif');
-   background-size: contain;
-}
-</style>
+    <link rel="shortcut icon" href="assets/images/logos/logofavicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
 
 <body>
     <div class="preloader"></div>
     <!--====== HEADER PART START ======-->
-<header class="fixed-top navbar-scroller">
-    <div class="container-fluid bg-transparent">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="d-lg-none d-block d-flex justify-content-between align-items-center p-3 w-100">
-                <a href="index.html"><img class="animate__animated animate__rotateInDownLeft img-fluid" src="assets/images/logos/logo.svg" alt="img"></a>
-                <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
-                <a class="nav-brand animate__animated animate__rotateInDownLeft d-lg-block d-none" href="index.html">
-                    <img class="img-fluid" src="assets/images/logos/logo.svg" alt="">
-                </a>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link cool-link2" href="index.html">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link cool-link2" href="gallery.html">GALLERY</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link cool-link2" href="about.html">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link cool-link2" href="faq.html">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link cool-link2" href="contact.html">CONTACT</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link cool-link2" href="#"><i class="fa-brands fa-pinterest-p"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link cool-link2" href="#"><i class="fa-brands fa-instagram"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link cool-link2" href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-    <!-- container -->
-</header>
-
-
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-    <div class="offcanvas-header bg-dark">
-        <h5 id="offcanvasRightLabel"><img class="img-fluid animate__animated animate__rotateInDownLeft" src="assets/images/logos/logo.svg" alt="img"></h5>
-        <button type="button" class="btn text-white fs-3" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-    </div>
-    <div class="offcanvas-body bg-dark">
-        <a class="d-block py-2 fs-5 text-white text-decoration-none border-white border-0 border-bottom" href="index.html">Home</a>
-        <a class="d-block py-2 fs-5 text-white text-decoration-none border-white border-0 border-bottom" href="gallery.html">Gallery</a>
-        <a class="d-block py-2 fs-5 text-white text-decoration-none border-white border-0 border-bottom" href="about.html">About Us</a>
-        <a class="d-block py-2 fs-5 text-white text-decoration-none border-white border-0 border-bottom" href="faq.html">FAQs</a>
-        <a class="d-block py-2 fs-5 text-white text-decoration-none border-white border-0 border-bottom" href="contact.html">Contact Us</a>
-        <a class="d-block py-2 fs-5 text-white text-decoration-none border-white border-0 border-bottom" href="#">Facebook</a>
-        <a class="d-block py-2 fs-5 text-white text-decoration-none border-white border-0 border-bottom" href="#">Instagram</a>
-        <a class="d-block py-2 fs-5 text-white text-decoration-none border-white border-0 border-bottom" href="#">Pinterest</a>
-    </div>
-</div>
-        <!-- banner-section -->
-        <div class="container-fluid p-0 banner-home" id="top">
-            <div class="container h-100 position-relative">
-                <div class="max-width-800 text-white pt-12 animate__animated animate__backInUp">
-                    <h1 class="display-3 fw-bold">Ceramic tiles — <br>archaic craftsmanship<br>meets modern design.</h1>
-                    <a class="btn cool-link2 text-white" href="#">See Collection <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    <header class="fixed-top navbar-scroller">
+        <div class="container-fluid bg-transparent">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="d-lg-none d-block d-flex justify-content-between align-items-center p-3 w-100">
+                    <a href="index.html"><img class="animate__animated animate__rotateInDownLeft img-fluid"
+                            src="assets/images/logos/logo.svg" alt="img"></a>
+                    <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
                 </div>
-                <div class="position-absolute top-100 start-0 translate-middle-y max-width-400">
-                    <video class="w-100" loop="" autoplay="" muted="">
-                        <source src="assets/images/video.mp4" type="video/mp4">
-                    </video>
+                <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
+                    <a class="nav-brand animate__animated animate__rotateInDownLeft d-lg-block d-none"
+                        href="index.html">
+                        <img class="img-fluid" src="assets/images/logos/logo.svg" alt="">
+                    </a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link cool-link2" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cool-link2" href="gallery.html">GALLERY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cool-link2" href="about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cool-link2" href="faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cool-link2" href="contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link cool-link2" href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cool-link2" href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cool-link2" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="position-absolute top-100 end-0 translate-middle-y max-width-400 d-lg-block d-none">
-                    <img class="img-fluid" src="assets/images/img2.jpg" alt="" data-aos="fade-up">
-                </div>
-            </div>
-        </div>
-        <!-- breif-section -->
-        <div class="container py-10 bg-white">
-            <div class="max-width-500 pt-10">
-                <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem repellendus quas corrupti cumque dolorum sint magnam quasi! Eos odit, quasi assumenda qui corporis ducimus, eius impedit minus dignissimos velit perspiciatis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem repellendus quas corrupti cumque dolorum sint magnam quasi! Eos odit, quasi assumenda qui corporis ducimus, eius impedit minus dignissimos velit perspiciatis!</p>
-            </div>
-        </div>
-        <!-- history-section -->
-        <div class="container py-10 bg-white">
-            <div class="text-center" data-aos="fade-right">
-                <small href="about.html" class="btn cool-link text-uppercase">Our Motivation</small>
-            </div>
-            <div class="fs-10 mb-3 text-center m-auto max-width-1000 fw-bold" data-aos="fade-up">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem repellendus quas corrupti cumque dolorum sint magnam quasi!
-            </div>
-            <div class="text-center">
-                <a href="#" class="btn cool-link">GET IN TOUCH TO BRING SOUL INTO YOUR HOUSE. <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-        </div>
-        <!-- inspiration -->
-        <div class="container-fluid py-10 px-0 bg-white">
-            <div class="row align-items-center m-0">
-                <div class="col-md-6">
-                    <div class="m-auto max-width-600 py-5">
-                        <h2 class="display-3 fw-bold" data-aos="fade-up">Soulful Inspiration</h2>
-                        <p data-aos="fade-down">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem repellendus quas corrupti cumque dolorum sint magnam quasi! Lorem ipsum dolor sit amet.</p>
-                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                            <button class="btn text-start fs-4 py-2 b-col-dark" id="soul-one" data-bs-toggle="pill" data-bs-target="#soul--one" type="button" role="tab" aria-controls="soul--one" aria-selected="true">
-                                <div class="d-flex">
-                                    <div class="me-1"><i class="fa-solid fa-arrow-right"></i> </div>
-                                    <div class="me-1">Bath – Rejuvenating for body & soul</div>
-                                </div>
-                            </button>
-                            <button class="btn text-start fs-4 py-2 b-col-dark" id="soul-two" data-bs-toggle="pill" data-bs-target="#soul--two" type="button" role="tab" aria-controls="soul--two" aria-selected="false">
-                                <div class="d-flex">
-                                    <div class="me-1"><i class="fa-solid fa-arrow-right"></i> </div>
-                                    <div class="me-1">Grand - Extravagant and elegant look</div>
-                                </div>
-                            </button>
-                            <button class="btn text-start fs-4 py-2 b-col-dark" id="soul-three" data-bs-toggle="pill" data-bs-target="#soul--three" type="button" role="tab" aria-controls="soul--three" aria-selected="false">
-                                <div class="d-flex">
-                                    <div class="me-1"><i class="fa-solid fa-arrow-right"></i> </div>
-                                    <div class="me-1">Living – Mesmerizing view at Home</div>
-                                </div>
-                            </button>
-                            <button class="btn text-start fs-4 py-2 b-col-dark" id="soul-four" data-bs-toggle="pill" data-bs-target="#soul--four" type="button" role="tab" aria-controls="soul--four" aria-selected="false">
-                                <div class="d-flex">
-                                    <div class="me-1"><i class="fa-solid fa-arrow-right"></i> </div>
-                                    <div class="me-1">Art - Inspirational & creative vision</div>
-                                </div>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="tab-content" id="v-pills-tabContent" data-aos="fade-up">
-                        <div class="tab-pane fade show active" id="soul--one" role="tabpanel" aria-labelledby="soul-one">
-                            <img class="img-fluid" src="assets/images/soul1.jpg">
-                        </div>
-                        <div class="tab-pane fade" id="soul--two" role="tabpanel" aria-labelledby="soul-two">
-                            <img class="img-fluid" src="assets/images/soul2.jpg">
-                        </div>
-                        <div class="tab-pane fade" id="soul--three" role="tabpanel" aria-labelledby="soul-three">
-                            <img class="img-fluid" src="assets/images/soul3.jpg">
-                        </div>
-                        <div class="tab-pane fade" id="soul--four" role="tabpanel" aria-labelledby="soul-four">
-                            <img class="img-fluid" src="assets/images/soul4.jpg">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- inspiration -->
-        <div class="container-fluid px-0 py-10 bg-white">
-            <h2 class="text-center display-1 mb-5" data-aos="fade-up">Unique Diversity</h2>
-            <div class="overflow-all p-0 m-0 mb-3">
-                <div class="d-flex w-200 justify-content-evenly">
-                    <div class="w-8 position-relative">
-                        <img class="img-fluid" src="assets/images/flow-1.jpg">
-                        <div class="w-8-overlay position-absolute w-100 h-100 text-center">
-                            <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
-                            <div>
-                                <a class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                                </a>
-                                <a href="#" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-heart"></i>
-                                </a>
-                            </div>
-                            <a href="#" class="btn btn-outline-secondary">
-                                <i class="fa-solid fa-square-plus"></i> Open In Workbench
-                            </a>
-                        </div>
-                    </div>
-                    <div class="w-8 position-relative">
-                        <img class="img-fluid" src="assets/images/flow-2.jpg">
-                        <div class="w-8-overlay position-absolute w-100 h-100 text-center">
-                            <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
-                            <div>
-                                <a class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                                </a>
-                                <a href="#" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-heart"></i>
-                                </a>
-                            </div>
-                            <a href="#" class="btn btn-outline-secondary">
-                                <i class="fa-solid fa-square-plus"></i> Open In Workbench
-                            </a>
-                        </div>
-                    </div>
-                    <div class="w-8 position-relative">
-                        <img class="img-fluid" src="assets/images/flow-3.jpg">
-                        <div class="w-8-overlay position-absolute w-100 h-100 text-center">
-                            <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
-                            <div>
-                                <a class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                                </a>
-                                <a href="#" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-heart"></i>
-                                </a>
-                            </div>
-                            <a href="#" class="btn btn-outline-secondary">
-                                <i class="fa-solid fa-square-plus"></i> Open In Workbench
-                            </a>
-                        </div>
-                    </div>
-                    <div class="w-8 position-relative">
-                        <img class="img-fluid" src="assets/images/flow-4.jpg">
-                        <div class="w-8-overlay position-absolute w-100 h-100 text-center">
-                            <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
-                            <div>
-                                <a class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                                </a>
-                                <a href="#" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-heart"></i>
-                                </a>
-                            </div>
-                            <a href="#" class="btn btn-outline-secondary">
-                                <i class="fa-solid fa-square-plus"></i> Open In Workbench
-                            </a>
-                        </div>
-                    </div>
-                    <div class="w-8 position-relative">
-                        <img class="img-fluid" src="assets/images/flow-5.jpg">
-                        <div class="w-8-overlay position-absolute w-100 h-100 text-center">
-                            <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
-                            <div>
-                                <a class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                                </a>
-                                <a href="#" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-heart"></i>
-                                </a>
-                            </div>
-                            <a href="#" class="btn btn-outline-secondary">
-                                <i class="fa-solid fa-square-plus"></i> Open In Workbench
-                            </a>
-                        </div>
-                    </div>
-                    <div class="w-8 position-relative">
-                        <img class="img-fluid" src="assets/images/flow-6.jpg">
-                        <div class="w-8-overlay position-absolute w-100 h-100 text-center">
-                            <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
-                            <div>
-                                <a class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                                </a>
-                                <a href="#" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-heart"></i>
-                                </a>
-                            </div>
-                            <a href="#" class="btn btn-outline-secondary">
-                                <i class="fa-solid fa-square-plus"></i> Open In Workbench
-                            </a>
-                        </div>
-                    </div>
-                    <div class="w-8 position-relative">
-                        <img class="img-fluid" src="assets/images/flow-7.jpg">
-                        <div class="w-8-overlay position-absolute w-100 h-100 text-center">
-                            <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
-                            <div>
-                                <a class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                                </a>
-                                <a href="#" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-heart"></i>
-                                </a>
-                            </div>
-                            <a href="#" class="btn btn-outline-secondary">
-                                <i class="fa-solid fa-square-plus"></i> Open In Workbench
-                            </a>
-                        </div>
-                    </div>
-                    <div class="w-8 position-relative">
-                        <img class="img-fluid" src="assets/images/flow-8.jpg">
-                        <div class="w-8-overlay position-absolute w-100 h-100 text-center">
-                            <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
-                            <div>
-                                <a class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                                </a>
-                                <a href="#" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-heart"></i>
-                                </a>
-                            </div>
-                            <a href="#" class="btn btn-outline-secondary">
-                                <i class="fa-solid fa-square-plus"></i> Open In Workbench
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="overflow-all p-0 m-0 mb-3">
-                <div class="d-flex w-300 justify-content-evenly">
-                    <div class="w-8 position-relative">
-                        <img class="img-fluid" src="assets/images/flow-1.jpg">
-                        <div class="w-8-overlay position-absolute w-100 h-100 text-center">
-                            <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
-                            <div>
-                                <a class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                                </a>
-                                <a href="#" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-heart"></i>
-                                </a>
-                            </div>
-                            <a href="#" class="btn btn-outline-secondary">
-                                <i class="fa-solid fa-square-plus"></i> Open In Workbench
-                            </a>
-                        </div>
-                    </div>
-                    <div class="w-8 position-relative">
-                        <img class="img-fluid" src="assets/images/flow-2.jpg">
-                        <div class="w-8-overlay position-absolute w-100 h-100 text-center">
-                            <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
-                            <div>
-                                <a class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                                </a>
-                                <a href="#" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-heart"></i>
-                                </a>
-                            </div>
-                            <a href="#" class="btn btn-outline-secondary">
-                                <i class="fa-solid fa-square-plus"></i> Open In Workbench
-                            </a>
-                        </div>
-                    </div>
-                    <div class="w-8 position-relative">
-                        <img class="img-fluid" src="assets/images/flow-3.jpg">
-                        <div class="w-8-overlay position-absolute w-100 h-100 text-center">
-                            <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
-                            <div>
-                                <a class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                                </a>
-                                <a href="#" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-heart"></i>
-                                </a>
-                            </div>
-                            <a href="#" class="btn btn-outline-secondary">
-                                <i class="fa-solid fa-square-plus"></i> Open In Workbench
-                            </a>
-                        </div>
-                    </div>
-                    <div class="w-8 position-relative">
-                        <img class="img-fluid" src="assets/images/flow-4.jpg">
-                        <div class="w-8-overlay position-absolute w-100 h-100 text-center">
-                            <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
-                            <div>
-                                <a class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                                </a>
-                                <a href="#" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-heart"></i>
-                                </a>
-                            </div>
-                            <a href="#" class="btn btn-outline-secondary">
-                                <i class="fa-solid fa-square-plus"></i> Open In Workbench
-                            </a>
-                        </div>
-                    </div>
-                    <div class="w-8 position-relative">
-                        <img class="img-fluid" src="assets/images/flow-5.jpg">
-                        <div class="w-8-overlay position-absolute w-100 h-100 text-center">
-                            <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
-                            <div>
-                                <a class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                                </a>
-                                <a href="#" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-heart"></i>
-                                </a>
-                            </div>
-                            <a href="#" class="btn btn-outline-secondary">
-                                <i class="fa-solid fa-square-plus"></i> Open In Workbench
-                            </a>
-                        </div>
-                    </div>
-                    <div class="w-8 position-relative">
-                        <img class="img-fluid" src="assets/images/flow-6.jpg">
-                        <div class="w-8-overlay position-absolute w-100 h-100 text-center">
-                            <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
-                            <div>
-                                <a class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                                </a>
-                                <a href="#" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-heart"></i>
-                                </a>
-                            </div>
-                            <a href="#" class="btn btn-outline-secondary">
-                                <i class="fa-solid fa-square-plus"></i> Open In Workbench
-                            </a>
-                        </div>
-                    </div>
-                    <div class="w-8 position-relative">
-                        <img class="img-fluid" src="assets/images/flow-7.jpg">
-                        <div class="w-8-overlay position-absolute w-100 h-100 text-center">
-                            <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
-                            <div>
-                                <a class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                                </a>
-                                <a href="#" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-heart"></i>
-                                </a>
-                            </div>
-                            <a href="#" class="btn btn-outline-secondary">
-                                <i class="fa-solid fa-square-plus"></i> Open In Workbench
-                            </a>
-                        </div>
-                    </div>
-                    <div class="w-8 position-relative">
-                        <img class="img-fluid" src="assets/images/flow-8.jpg">
-                        <div class="w-8-overlay position-absolute w-100 h-100 text-center">
-                            <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
-                            <div>
-                                <a class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                                </a>
-                                <a href="#" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-heart"></i>
-                                </a>
-                            </div>
-                            <a href="#" class="btn btn-outline-secondary">
-                                <i class="fa-solid fa-square-plus"></i> Open In Workbench
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="overflow-all p-0 m-0 mb-3">
-                <div class="d-flex w-200 justify-content-evenly">
-                    <div class="w-8 position-relative">
-                        <img class="img-fluid" src="assets/images/flow-1.jpg">
-                        <div class="w-8-overlay position-absolute w-100 h-100 text-center">
-                            <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
-                            <div>
-                                <a class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                                </a>
-                                <a href="#" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-heart"></i>
-                                </a>
-                            </div>
-                            <a href="#" class="btn btn-outline-secondary">
-                                <i class="fa-solid fa-square-plus"></i> Open In Workbench
-                            </a>
-                        </div>
-                    </div>
-                    <div class="w-8 position-relative">
-                        <img class="img-fluid" src="assets/images/flow-2.jpg">
-                        <div class="w-8-overlay position-absolute w-100 h-100 text-center">
-                            <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
-                            <div>
-                                <a class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                                </a>
-                                <a href="#" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-heart"></i>
-                                </a>
-                            </div>
-                            <a href="#" class="btn btn-outline-secondary">
-                                <i class="fa-solid fa-square-plus"></i> Open In Workbench
-                            </a>
-                        </div>
-                    </div>
-                    <div class="w-8 position-relative">
-                        <img class="img-fluid" src="assets/images/flow-3.jpg">
-                        <div class="w-8-overlay position-absolute w-100 h-100 text-center">
-                            <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
-                            <div>
-                                <a class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                                </a>
-                                <a href="#" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-heart"></i>
-                                </a>
-                            </div>
-                            <a href="#" class="btn btn-outline-secondary">
-                                <i class="fa-solid fa-square-plus"></i> Open In Workbench
-                            </a>
-                        </div>
-                    </div>
-                    <div class="w-8 position-relative">
-                        <img class="img-fluid" src="assets/images/flow-4.jpg">
-                        <div class="w-8-overlay position-absolute w-100 h-100 text-center">
-                            <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
-                            <div>
-                                <a class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                                </a>
-                                <a href="#" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-heart"></i>
-                                </a>
-                            </div>
-                            <a href="#" class="btn btn-outline-secondary">
-                                <i class="fa-solid fa-square-plus"></i> Open In Workbench
-                            </a>
-                        </div>
-                    </div>
-                    <div class="w-8 position-relative">
-                        <img class="img-fluid" src="assets/images/flow-5.jpg">
-                        <div class="w-8-overlay position-absolute w-100 h-100 text-center">
-                            <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
-                            <div>
-                                <a class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                                </a>
-                                <a href="#" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-heart"></i>
-                                </a>
-                            </div>
-                            <a href="#" class="btn btn-outline-secondary">
-                                <i class="fa-solid fa-square-plus"></i> Open In Workbench
-                            </a>
-                        </div>
-                    </div>
-                    <div class="w-8 position-relative">
-                        <img class="img-fluid" src="assets/images/flow-6.jpg">
-                        <div class="w-8-overlay position-absolute w-100 h-100 text-center">
-                            <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
-                            <div>
-                                <a class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                                </a>
-                                <a href="#" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-heart"></i>
-                                </a>
-                            </div>
-                            <a href="#" class="btn btn-outline-secondary">
-                                <i class="fa-solid fa-square-plus"></i> Open In Workbench
-                            </a>
-                        </div>
-                    </div>
-                    <div class="w-8 position-relative">
-                        <img class="img-fluid" src="assets/images/flow-7.jpg">
-                        <div class="w-8-overlay position-absolute w-100 h-100 text-center">
-                            <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
-                            <div>
-                                <a class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                                </a>
-                                <a href="#" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-heart"></i>
-                                </a>
-                            </div>
-                            <a href="#" class="btn btn-outline-secondary">
-                                <i class="fa-solid fa-square-plus"></i> Open In Workbench
-                            </a>
-                        </div>
-                    </div>
-                    <div class="w-8 position-relative">
-                        <img class="img-fluid" src="assets/images/flow-8.jpg">
-                        <div class="w-8-overlay position-absolute w-100 h-100 text-center">
-                            <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
-                            <div>
-                                <a class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                                </a>
-                                <a href="#" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-heart"></i>
-                                </a>
-                            </div>
-                            <a href="#" class="btn btn-outline-secondary">
-                                <i class="fa-solid fa-square-plus"></i> Open In Workbench
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="overflow-all p-0 m-0 mb-3">
-                <div class="d-flex w-300 justify-content-evenly">
-                    <div class="w-8 position-relative">
-                        <img class="img-fluid" src="assets/images/flow-1.jpg">
-                        <div class="w-8-overlay position-absolute w-100 h-100 text-center">
-                            <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
-                            <div>
-                                <a class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                                </a>
-                                <a href="#" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-heart"></i>
-                                </a>
-                            </div>
-                            <a href="#" class="btn btn-outline-secondary">
-                                <i class="fa-solid fa-square-plus"></i> Open In Workbench
-                            </a>
-                        </div>
-                    </div>
-                    <div class="w-8 position-relative">
-                        <img class="img-fluid" src="assets/images/flow-2.jpg">
-                        <div class="w-8-overlay position-absolute w-100 h-100 text-center">
-                            <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
-                            <div>
-                                <a class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                                </a>
-                                <a href="#" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-heart"></i>
-                                </a>
-                            </div>
-                            <a href="#" class="btn btn-outline-secondary">
-                                <i class="fa-solid fa-square-plus"></i> Open In Workbench
-                            </a>
-                        </div>
-                    </div>
-                    <div class="w-8 position-relative">
-                        <img class="img-fluid" src="assets/images/flow-3.jpg">
-                        <div class="w-8-overlay position-absolute w-100 h-100 text-center">
-                            <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
-                            <div>
-                                <a class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                                </a>
-                                <a href="#" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-heart"></i>
-                                </a>
-                            </div>
-                            <a href="#" class="btn btn-outline-secondary">
-                                <i class="fa-solid fa-square-plus"></i> Open In Workbench
-                            </a>
-                        </div>
-                    </div>
-                    <div class="w-8 position-relative">
-                        <img class="img-fluid" src="assets/images/flow-4.jpg">
-                        <div class="w-8-overlay position-absolute w-100 h-100 text-center">
-                            <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
-                            <div>
-                                <a class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                                </a>
-                                <a href="#" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-heart"></i>
-                                </a>
-                            </div>
-                            <a href="#" class="btn btn-outline-secondary">
-                                <i class="fa-solid fa-square-plus"></i> Open In Workbench
-                            </a>
-                        </div>
-                    </div>
-                    <div class="w-8 position-relative">
-                        <img class="img-fluid" src="assets/images/flow-5.jpg">
-                        <div class="w-8-overlay position-absolute w-100 h-100 text-center">
-                            <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
-                            <div>
-                                <a class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                                </a>
-                                <a href="#" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-heart"></i>
-                                </a>
-                            </div>
-                            <a href="#" class="btn btn-outline-secondary">
-                                <i class="fa-solid fa-square-plus"></i> Open In Workbench
-                            </a>
-                        </div>
-                    </div>
-                    <div class="w-8 position-relative">
-                        <img class="img-fluid" src="assets/images/flow-6.jpg">
-                        <div class="w-8-overlay position-absolute w-100 h-100 text-center">
-                            <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
-                            <div>
-                                <a class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                                </a>
-                                <a href="#" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-heart"></i>
-                                </a>
-                            </div>
-                            <a href="#" class="btn btn-outline-secondary">
-                                <i class="fa-solid fa-square-plus"></i> Open In Workbench
-                            </a>
-                        </div>
-                    </div>
-                    <div class="w-8 position-relative">
-                        <img class="img-fluid" src="assets/images/flow-7.jpg">
-                        <div class="w-8-overlay position-absolute w-100 h-100 text-center">
-                            <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
-                            <div>
-                                <a class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                                </a>
-                                <a href="#" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-heart"></i>
-                                </a>
-                            </div>
-                            <a href="#" class="btn btn-outline-secondary">
-                                <i class="fa-solid fa-square-plus"></i> Open In Workbench
-                            </a>
-                        </div>
-                    </div>
-                    <div class="w-8 position-relative">
-                        <img class="img-fluid" src="assets/images/flow-8.jpg">
-                        <div class="w-8-overlay position-absolute w-100 h-100 text-center">
-                            <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
-                            <div>
-                                <a class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                                </a>
-                                <a href="#" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-heart"></i>
-                                </a>
-                            </div>
-                            <a href="#" class="btn btn-outline-secondary">
-                                <i class="fa-solid fa-square-plus"></i> Open In Workbench
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center mt-5">
-                <a href="gallery.html" class="btn cool-link">OVERVIEW OF OUR SINGLE-TILES <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-        </div>
-        <!-- handmade -->
-        <div class="container-fluid px-0 bg-dark py-10">
-            <div class="container">
-                <div class="row m-0">
-                    <div class="col-md-4">
-                        <img class="img-fluid mb-3" src="assets/images/handmade1.jpg" alt="" data-aos="fade-up">
-                    </div>
-                    <div class="col-md-6">
-                        <div class="d-grid align-items-stretch max-width-400 m-auto">
-                            <div class="mb-5 pb-5">
-                                <h3 class="fs-2 text-white" data-aos="fade-down">100 percent handmade</h3>
-                                <p class="text-white" data-aos="fade-down">Craftsmanship is more than just a process for us. We are
-                                    passionate about it. This is why we donʼt accept
-                                    shortcuts: Every tile is handled over 30 times until it is
-                                    finished.</p>
-                                <a href="about.html" class="btn cool-link2">MORE ABOUT OUR CRAFT <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            </div>
-                            <img class="img-fluid" src="assets/images/handmade2.jpg" alt="" data-aos="fade-up">
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <img class="img-fluid d-md-block d-none" src="assets/images/handmade3.jpg" alt="" data-aos="fade-up">
-                    </div>
-                </div>
-            </div>
+            </nav>
         </div>
         <!-- container -->
-        <div class="container-fluid p-0 bg-white">
-            <div class="container">
-                <div class="row m-0 py-5">
-                    <div class="col-lg-6">
-                        <div class="bg-purple d-flex align-items-center position-relative h-100 w-100" data-aos="fade-up">
-                            <div class="m-auto max-width-400 d-flex flex-column">
-                                <div class="py-5 px-2">
-                                    <p class="text-center text-white"><u>100 TILES - Newsletter</u></p>
-                                    <h3 class="text-white text-center">Subscribe to our newsletter to stay informed about our news, activities & occasional special offers!</h3>
-                                    <div class="mb-5 py-5">
-                                        <div class="form-floating">
-                                            <input type="email" class="form-control" id="floatingEmail" placeholder="Hi">
-                                            <label for="floatingEmail">Email address</label>
-                                        </div>
-                                        <div class="d-grid">
-                                            <button class="btn btn-light btn-lg" type="button">Subscribe</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="position-absolute bottom-0 start-50 translate-middle-x mb-2">
-                                    <div class="tex-center">
-                                        <a href="#" class="btn cool-link2 text-white text-center">DISPLAY NEWSLETTER-ARCHIVE <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 p-10">
-                        <div class="max-width-600 news m-auto position-relative overflow-all" data-aos="fade-up">
-                            <img class="w-100 obj-fit h-100" src="assets/images/newsletter.jpg" alt="">
-                            <div class="news-overlay position-absolute h-100 w-100 top-0 start-0">
-                                <p class="text-center text-white"><u>Project 100 news</u></p>
-                                <h4 class="text-center text-white">Of Creative Ideas and Happy News Year!</h4>
-                                <p class="text-center text-white">11.04.2022</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    </header>
+
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header bg-dark">
+            <h5 id="offcanvasRightLabel"><img class="img-fluid animate__animated animate__rotateInDownLeft"
+                    src="assets/images/logos/logo.svg" alt="img"></h5>
+            <button type="button" class="btn text-white fs-3" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                    class="fa-solid fa-xmark"></i></button>
         </div>
-    <div class="empty"></div>
-<footer style="position:fixed; bottom: 0; z-index: -100; width: 100%">
-    <!-- container -collection -->
-    <div class="container-fluid py-5 px-0">
-        <div class="container">
-            <div class="owl-carousel owl-theme owl-footer">
-                <div class="item w-100">
-                    <div class="text-center">
-                        <p class="text-center fst-italic fs-3 m-0">View Our Gallery</p>
-                        <a href="gallery.html" class="display-1 text-dark text-decoration-none">Gallery</a>
-                    </div>
-                </div>
-                <div class="item w-100">
-                    <div class="text-center">
-                        <p class="text-center fst-italic fs-3 m-0">Know Us</p>
-                        <a href="about.html" class="display-1 text-dark text-decoration-none">About Us</a>
-                    </div>
-                </div>
-                <div class="item w-100">
-                    <div class="text-center">
-                        <p class="text-center fst-italic fs-3 m-0">Some Questions</p>
-                        <a href="faq.html" class="display-1 text-dark text-decoration-none">FAQs</a>
-                    </div>
-                </div>
-                <div class="item w-100">
-                    <div class="text-center">
-                        <p class="text-center fst-italic fs-3 m-0">Let's Talk</p>
-                        <a href="contact.html" class="display-1 text-dark text-decoration-none">Contact US</a>
-                    </div>
-                </div>
+        <div class="offcanvas-body bg-dark">
+            <a class="d-block py-2 fs-5 text-white text-decoration-none border-white border-0 border-bottom"
+                href="index.html">Home</a>
+            <a class="d-block py-2 fs-5 text-white text-decoration-none border-white border-0 border-bottom"
+                href="gallery.html">Gallery</a>
+            <a class="d-block py-2 fs-5 text-white text-decoration-none border-white border-0 border-bottom"
+                href="about.html">About Us</a>
+            <a class="d-block py-2 fs-5 text-white text-decoration-none border-white border-0 border-bottom"
+                href="faq.html">FAQs</a>
+            <a class="d-block py-2 fs-5 text-white text-decoration-none border-white border-0 border-bottom"
+                href="contact.html">Contact Us</a>
+            <a class="d-block py-2 fs-5 text-white text-decoration-none border-white border-0 border-bottom"
+                href="#">Facebook</a>
+            <a class="d-block py-2 fs-5 text-white text-decoration-none border-white border-0 border-bottom"
+                href="#">Instagram</a>
+            <a class="d-block py-2 fs-5 text-white text-decoration-none border-white border-0 border-bottom"
+                href="#">Pinterest</a>
+        </div>
+    </div>
+    <!-- banner-section -->
+    <div class="container-fluid p-0 banner-home" id="top">
+        <div class="container h-100 position-relative">
+            <div class="max-width-800 text-white pt-12 animate__animated animate__backInUp">
+                <h1 class="display-3 fw-bold">Ceramic tiles — <br>archaic craftsmanship<br>meets modern design.</h1>
+                <a class="btn cool-link2 text-white" href="#">See Collection <i
+                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            <div class="position-absolute top-100 start-0 translate-middle-y max-width-400">
+                <video class="w-100" loop="" autoplay="" muted="">
+                    <source src="assets/images/video.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="position-absolute top-100 end-0 translate-middle-y max-width-400 d-lg-block d-none">
+                <img class="img-fluid" src="assets/images/img2.jpg" alt="" data-aos="fade-up">
             </div>
         </div>
     </div>
-    <div class="container pt-5 pb-2">
+    <!-- breif-section -->
+    <div class="container py-10 bg-white">
+        <div class="max-width-500 pt-10">
+            <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem repellendus quas corrupti
+                cumque dolorum sint magnam quasi! Eos odit, quasi assumenda qui corporis ducimus, eius impedit minus
+                dignissimos velit perspiciatis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem repellendus
+                quas corrupti cumque dolorum sint magnam quasi! Eos odit, quasi assumenda qui corporis ducimus, eius
+                impedit minus dignissimos velit perspiciatis!</p>
+        </div>
+    </div>
+    <!-- history-section -->
+    <div class="container py-10 bg-white">
+        <div class="text-center" data-aos="fade-right">
+            <small href="about.html" class="btn cool-link text-uppercase">Our Motivation</small>
+        </div>
+        <div class="fs-10 mb-3 text-center m-auto max-width-1000 fw-bold" data-aos="fade-up">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem repellendus quas corrupti cumque dolorum sint
+            magnam quasi!
+        </div>
         <div class="text-center">
-            <ul class="list-unstyled d-flex flex-wrap justify-content-center">
-                <li class="px-2"><a class="text-dark text-uppercase text-decoration-none cool-link" href="index.html">Home</a></li>
-                <li class="px-2"><a class="text-dark text-uppercase text-decoration-none cool-link" href="about.html">About Us</a></li>
-                <li class="px-2"><a class="text-dark text-uppercase text-decoration-none cool-link" href="gallery.html">Gallery</a></li>
-                <li class="px-2"><a class="text-dark text-uppercase text-decoration-none cool-link" href="contact.html">Contact</a></li>
-                <li class="px-2"><a class="text-dark text-uppercase text-decoration-none cool-link" href="#">FAQ</a></li>
-                <li class="px-2"><a class="text-dark text-uppercase text-decoration-none cool-link" href="#">Instagram</a></li>
-                <li class="px-2"><a class="text-dark text-uppercase text-decoration-none cool-link" href="#">Facebook</a></li>
-                <li class="px-2"><a class="text-dark text-uppercase text-decoration-none cool-link" href="#">Pinterest</a></li>
-            </ul>
+            <a href="#" class="btn cool-link">GET IN TOUCH TO BRING SOUL INTO YOUR HOUSE. <i
+                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </div>
     </div>
-</footer>
+    <!-- inspiration -->
+    <div class="container-fluid py-10 px-0 bg-white">
+        <div class="row align-items-center m-0">
+            <div class="col-md-6">
+                <div class="m-auto max-width-600 py-5">
+                    <h2 class="display-3 fw-bold" data-aos="fade-up">Soulful Inspiration</h2>
+                    <p data-aos="fade-down">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem repellendus
+                        quas corrupti cumque dolorum sint magnam quasi! Lorem ipsum dolor sit amet.</p>
+                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                        aria-orientation="vertical">
+                        <button class="btn text-start fs-4 py-2 b-col-dark" id="soul-one" data-bs-toggle="pill"
+                            data-bs-target="#soul--one" type="button" role="tab" aria-controls="soul--one"
+                            aria-selected="true">
+                            <div class="d-flex">
+                                <div class="me-1"><i class="fa-solid fa-arrow-right"></i> </div>
+                                <div class="me-1">Bath – Rejuvenating for body & soul</div>
+                            </div>
+                        </button>
+                        <button class="btn text-start fs-4 py-2 b-col-dark" id="soul-two" data-bs-toggle="pill"
+                            data-bs-target="#soul--two" type="button" role="tab" aria-controls="soul--two"
+                            aria-selected="false">
+                            <div class="d-flex">
+                                <div class="me-1"><i class="fa-solid fa-arrow-right"></i> </div>
+                                <div class="me-1">Grand - Extravagant and elegant look</div>
+                            </div>
+                        </button>
+                        <button class="btn text-start fs-4 py-2 b-col-dark" id="soul-three" data-bs-toggle="pill"
+                            data-bs-target="#soul--three" type="button" role="tab" aria-controls="soul--three"
+                            aria-selected="false">
+                            <div class="d-flex">
+                                <div class="me-1"><i class="fa-solid fa-arrow-right"></i> </div>
+                                <div class="me-1">Living – Mesmerizing view at Home</div>
+                            </div>
+                        </button>
+                        <button class="btn text-start fs-4 py-2 b-col-dark" id="soul-four" data-bs-toggle="pill"
+                            data-bs-target="#soul--four" type="button" role="tab" aria-controls="soul--four"
+                            aria-selected="false">
+                            <div class="d-flex">
+                                <div class="me-1"><i class="fa-solid fa-arrow-right"></i> </div>
+                                <div class="me-1">Art - Inspirational & creative vision</div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="tab-content" id="v-pills-tabContent" data-aos="fade-up">
+                    <div class="tab-pane fade show active" id="soul--one" role="tabpanel" aria-labelledby="soul-one">
+                        <img class="img-fluid" src="assets/images/soul1.jpg">
+                    </div>
+                    <div class="tab-pane fade" id="soul--two" role="tabpanel" aria-labelledby="soul-two">
+                        <img class="img-fluid" src="assets/images/soul2.jpg">
+                    </div>
+                    <div class="tab-pane fade" id="soul--three" role="tabpanel" aria-labelledby="soul-three">
+                        <img class="img-fluid" src="assets/images/soul3.jpg">
+                    </div>
+                    <div class="tab-pane fade" id="soul--four" role="tabpanel" aria-labelledby="soul-four">
+                        <img class="img-fluid" src="assets/images/soul4.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- inspiration -->
+    <div class="container-fluid px-0 py-10 bg-white">
+        <h2 class="text-center display-1 mb-5" data-aos="fade-up">Unique Diversity</h2>
+        <div class="overflow-all p-0 m-0 mb-3">
+            <div class="d-flex w-200 justify-content-evenly">
+                <div class="w-8 position-relative">
+                    <img class="img-fluid" src="assets/images/flow-1.jpg">
+                    <div class="w-8-overlay position-absolute w-100 h-100 text-center">
+                        <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
+                        <div>
+                            <a class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-square-plus"></i> Open In Workbench
+                        </a>
+                    </div>
+                </div>
+                <div class="w-8 position-relative">
+                    <img class="img-fluid" src="assets/images/flow-2.jpg">
+                    <div class="w-8-overlay position-absolute w-100 h-100 text-center">
+                        <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
+                        <div>
+                            <a class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-square-plus"></i> Open In Workbench
+                        </a>
+                    </div>
+                </div>
+                <div class="w-8 position-relative">
+                    <img class="img-fluid" src="assets/images/flow-3.jpg">
+                    <div class="w-8-overlay position-absolute w-100 h-100 text-center">
+                        <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
+                        <div>
+                            <a class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-square-plus"></i> Open In Workbench
+                        </a>
+                    </div>
+                </div>
+                <div class="w-8 position-relative">
+                    <img class="img-fluid" src="assets/images/flow-4.jpg">
+                    <div class="w-8-overlay position-absolute w-100 h-100 text-center">
+                        <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
+                        <div>
+                            <a class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-square-plus"></i> Open In Workbench
+                        </a>
+                    </div>
+                </div>
+                <div class="w-8 position-relative">
+                    <img class="img-fluid" src="assets/images/flow-5.jpg">
+                    <div class="w-8-overlay position-absolute w-100 h-100 text-center">
+                        <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
+                        <div>
+                            <a class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-square-plus"></i> Open In Workbench
+                        </a>
+                    </div>
+                </div>
+                <div class="w-8 position-relative">
+                    <img class="img-fluid" src="assets/images/flow-6.jpg">
+                    <div class="w-8-overlay position-absolute w-100 h-100 text-center">
+                        <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
+                        <div>
+                            <a class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-square-plus"></i> Open In Workbench
+                        </a>
+                    </div>
+                </div>
+                <div class="w-8 position-relative">
+                    <img class="img-fluid" src="assets/images/flow-7.jpg">
+                    <div class="w-8-overlay position-absolute w-100 h-100 text-center">
+                        <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
+                        <div>
+                            <a class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-square-plus"></i> Open In Workbench
+                        </a>
+                    </div>
+                </div>
+                <div class="w-8 position-relative">
+                    <img class="img-fluid" src="assets/images/flow-8.jpg">
+                    <div class="w-8-overlay position-absolute w-100 h-100 text-center">
+                        <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
+                        <div>
+                            <a class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-square-plus"></i> Open In Workbench
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overflow-all p-0 m-0 mb-3">
+            <div class="d-flex w-300 justify-content-evenly">
+                <div class="w-8 position-relative">
+                    <img class="img-fluid" src="assets/images/flow-1.jpg">
+                    <div class="w-8-overlay position-absolute w-100 h-100 text-center">
+                        <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
+                        <div>
+                            <a class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-square-plus"></i> Open In Workbench
+                        </a>
+                    </div>
+                </div>
+                <div class="w-8 position-relative">
+                    <img class="img-fluid" src="assets/images/flow-2.jpg">
+                    <div class="w-8-overlay position-absolute w-100 h-100 text-center">
+                        <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
+                        <div>
+                            <a class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-square-plus"></i> Open In Workbench
+                        </a>
+                    </div>
+                </div>
+                <div class="w-8 position-relative">
+                    <img class="img-fluid" src="assets/images/flow-3.jpg">
+                    <div class="w-8-overlay position-absolute w-100 h-100 text-center">
+                        <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
+                        <div>
+                            <a class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-square-plus"></i> Open In Workbench
+                        </a>
+                    </div>
+                </div>
+                <div class="w-8 position-relative">
+                    <img class="img-fluid" src="assets/images/flow-4.jpg">
+                    <div class="w-8-overlay position-absolute w-100 h-100 text-center">
+                        <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
+                        <div>
+                            <a class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-square-plus"></i> Open In Workbench
+                        </a>
+                    </div>
+                </div>
+                <div class="w-8 position-relative">
+                    <img class="img-fluid" src="assets/images/flow-5.jpg">
+                    <div class="w-8-overlay position-absolute w-100 h-100 text-center">
+                        <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
+                        <div>
+                            <a class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-square-plus"></i> Open In Workbench
+                        </a>
+                    </div>
+                </div>
+                <div class="w-8 position-relative">
+                    <img class="img-fluid" src="assets/images/flow-6.jpg">
+                    <div class="w-8-overlay position-absolute w-100 h-100 text-center">
+                        <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
+                        <div>
+                            <a class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-square-plus"></i> Open In Workbench
+                        </a>
+                    </div>
+                </div>
+                <div class="w-8 position-relative">
+                    <img class="img-fluid" src="assets/images/flow-7.jpg">
+                    <div class="w-8-overlay position-absolute w-100 h-100 text-center">
+                        <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
+                        <div>
+                            <a class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-square-plus"></i> Open In Workbench
+                        </a>
+                    </div>
+                </div>
+                <div class="w-8 position-relative">
+                    <img class="img-fluid" src="assets/images/flow-8.jpg">
+                    <div class="w-8-overlay position-absolute w-100 h-100 text-center">
+                        <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
+                        <div>
+                            <a class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-square-plus"></i> Open In Workbench
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overflow-all p-0 m-0 mb-3">
+            <div class="d-flex w-200 justify-content-evenly">
+                <div class="w-8 position-relative">
+                    <img class="img-fluid" src="assets/images/flow-1.jpg">
+                    <div class="w-8-overlay position-absolute w-100 h-100 text-center">
+                        <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
+                        <div>
+                            <a class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-square-plus"></i> Open In Workbench
+                        </a>
+                    </div>
+                </div>
+                <div class="w-8 position-relative">
+                    <img class="img-fluid" src="assets/images/flow-2.jpg">
+                    <div class="w-8-overlay position-absolute w-100 h-100 text-center">
+                        <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
+                        <div>
+                            <a class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-square-plus"></i> Open In Workbench
+                        </a>
+                    </div>
+                </div>
+                <div class="w-8 position-relative">
+                    <img class="img-fluid" src="assets/images/flow-3.jpg">
+                    <div class="w-8-overlay position-absolute w-100 h-100 text-center">
+                        <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
+                        <div>
+                            <a class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-square-plus"></i> Open In Workbench
+                        </a>
+                    </div>
+                </div>
+                <div class="w-8 position-relative">
+                    <img class="img-fluid" src="assets/images/flow-4.jpg">
+                    <div class="w-8-overlay position-absolute w-100 h-100 text-center">
+                        <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
+                        <div>
+                            <a class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-square-plus"></i> Open In Workbench
+                        </a>
+                    </div>
+                </div>
+                <div class="w-8 position-relative">
+                    <img class="img-fluid" src="assets/images/flow-5.jpg">
+                    <div class="w-8-overlay position-absolute w-100 h-100 text-center">
+                        <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
+                        <div>
+                            <a class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-square-plus"></i> Open In Workbench
+                        </a>
+                    </div>
+                </div>
+                <div class="w-8 position-relative">
+                    <img class="img-fluid" src="assets/images/flow-6.jpg">
+                    <div class="w-8-overlay position-absolute w-100 h-100 text-center">
+                        <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
+                        <div>
+                            <a class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-square-plus"></i> Open In Workbench
+                        </a>
+                    </div>
+                </div>
+                <div class="w-8 position-relative">
+                    <img class="img-fluid" src="assets/images/flow-7.jpg">
+                    <div class="w-8-overlay position-absolute w-100 h-100 text-center">
+                        <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
+                        <div>
+                            <a class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-square-plus"></i> Open In Workbench
+                        </a>
+                    </div>
+                </div>
+                <div class="w-8 position-relative">
+                    <img class="img-fluid" src="assets/images/flow-8.jpg">
+                    <div class="w-8-overlay position-absolute w-100 h-100 text-center">
+                        <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
+                        <div>
+                            <a class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-square-plus"></i> Open In Workbench
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overflow-all p-0 m-0 mb-3">
+            <div class="d-flex w-300 justify-content-evenly">
+                <div class="w-8 position-relative">
+                    <img class="img-fluid" src="assets/images/flow-1.jpg">
+                    <div class="w-8-overlay position-absolute w-100 h-100 text-center">
+                        <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
+                        <div>
+                            <a class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-square-plus"></i> Open In Workbench
+                        </a>
+                    </div>
+                </div>
+                <div class="w-8 position-relative">
+                    <img class="img-fluid" src="assets/images/flow-2.jpg">
+                    <div class="w-8-overlay position-absolute w-100 h-100 text-center">
+                        <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
+                        <div>
+                            <a class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-square-plus"></i> Open In Workbench
+                        </a>
+                    </div>
+                </div>
+                <div class="w-8 position-relative">
+                    <img class="img-fluid" src="assets/images/flow-3.jpg">
+                    <div class="w-8-overlay position-absolute w-100 h-100 text-center">
+                        <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
+                        <div>
+                            <a class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-square-plus"></i> Open In Workbench
+                        </a>
+                    </div>
+                </div>
+                <div class="w-8 position-relative">
+                    <img class="img-fluid" src="assets/images/flow-4.jpg">
+                    <div class="w-8-overlay position-absolute w-100 h-100 text-center">
+                        <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
+                        <div>
+                            <a class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-square-plus"></i> Open In Workbench
+                        </a>
+                    </div>
+                </div>
+                <div class="w-8 position-relative">
+                    <img class="img-fluid" src="assets/images/flow-5.jpg">
+                    <div class="w-8-overlay position-absolute w-100 h-100 text-center">
+                        <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
+                        <div>
+                            <a class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-square-plus"></i> Open In Workbench
+                        </a>
+                    </div>
+                </div>
+                <div class="w-8 position-relative">
+                    <img class="img-fluid" src="assets/images/flow-6.jpg">
+                    <div class="w-8-overlay position-absolute w-100 h-100 text-center">
+                        <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
+                        <div>
+                            <a class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-square-plus"></i> Open In Workbench
+                        </a>
+                    </div>
+                </div>
+                <div class="w-8 position-relative">
+                    <img class="img-fluid" src="assets/images/flow-7.jpg">
+                    <div class="w-8-overlay position-absolute w-100 h-100 text-center">
+                        <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
+                        <div>
+                            <a class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-square-plus"></i> Open In Workbench
+                        </a>
+                    </div>
+                </div>
+                <div class="w-8 position-relative">
+                    <img class="img-fluid" src="assets/images/flow-8.jpg">
+                    <div class="w-8-overlay position-absolute w-100 h-100 text-center">
+                        <h4 class="fw-bold">H70, Moonrock, Beige, Tile</h4>
+                        <div>
+                            <a class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-square-plus"></i> Open In Workbench
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<a href="#top" id="topBtn" title="Go to top">
-    <i class="fa-solid fa-angles-up"></i>
-</a>
-<div class="cursor" id="cursor"></div>    <!--====== Jquery js ======-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <div class="text-center mt-5">
+            <a href="gallery.html" class="btn cool-link">OVERVIEW OF OUR SINGLE-TILES <i
+                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+    </div>
+    <!-- handmade -->
+    <div class="container-fluid px-0 bg-dark py-10">
+        <div class="container">
+            <div class="row m-0">
+                <div class="col-md-4">
+                    <img class="img-fluid mb-3" src="assets/images/handmade1.jpg" alt="" data-aos="fade-up">
+                </div>
+                <div class="col-md-6">
+                    <div class="d-grid align-items-stretch max-width-400 m-auto">
+                        <div class="mb-5 pb-5">
+                            <h3 class="fs-2 text-white" data-aos="fade-down">100 percent handmade</h3>
+                            <p class="text-white" data-aos="fade-down">Craftsmanship is more than just a process for us.
+                                We are
+                                passionate about it. This is why we donʼt accept
+                                shortcuts: Every tile is handled over 30 times until it is
+                                finished.</p>
+                            <a href="about.html" class="btn cool-link2">MORE ABOUT OUR CRAFT <i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                        <img class="img-fluid" src="assets/images/handmade2.jpg" alt="" data-aos="fade-up">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <img class="img-fluid d-md-block d-none" src="assets/images/handmade3.jpg" alt=""
+                        data-aos="fade-up">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- container -->
+    <div class="container-fluid p-0 bg-white">
+        <div class="container">
+            <div class="row m-0 py-5">
+                <div class="col-lg-6">
+                    <div class="bg-purple d-flex align-items-center position-relative h-100 w-100" data-aos="fade-up">
+                        <div class="m-auto max-width-400 d-flex flex-column">
+                            <div class="py-5 px-2">
+                                <p class="text-center text-white"><u>100 TILES - Newsletter</u></p>
+                                <h3 class="text-white text-center">Subscribe to our newsletter to stay informed about
+                                    our news, activities & occasional special offers!</h3>
+                                <div class="mb-5 py-5">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="floatingEmail" placeholder="Hi">
+                                        <label for="floatingEmail">Email address</label>
+                                    </div>
+                                    <div class="d-grid">
+                                        <button class="btn btn-light btn-lg" type="button">Subscribe</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="position-absolute bottom-0 start-50 translate-middle-x mb-2">
+                                <div class="tex-center">
+                                    <a href="#" class="btn cool-link2 text-white text-center">DISPLAY NEWSLETTER-ARCHIVE
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 p-10">
+                    <div class="max-width-600 news m-auto position-relative overflow-all" data-aos="fade-up">
+                        <img class="w-100 obj-fit h-100" src="assets/images/newsletter.jpg" alt="">
+                        <div class="news-overlay position-absolute h-100 w-100 top-0 start-0">
+                            <p class="text-center text-white"><u>Project 100 news</u></p>
+                            <h4 class="text-center text-white">Of Creative Ideas and Happy News Year!</h4>
+                            <p class="text-center text-white">11.04.2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="empty"></div>
+    <footer style="position:fixed; bottom: 0; z-index: -100; width: 100%">
+        <!-- container -collection -->
+        <div class="container-fluid py-5 px-0">
+            <div class="container">
+                <div class="owl-carousel owl-theme owl-footer">
+                    <div class="item w-100">
+                        <div class="text-center">
+                            <p class="text-center fst-italic fs-3 m-0">View Our Gallery</p>
+                            <a href="gallery.html" class="display-1 text-dark text-decoration-none">Gallery</a>
+                        </div>
+                    </div>
+                    <div class="item w-100">
+                        <div class="text-center">
+                            <p class="text-center fst-italic fs-3 m-0">Know Us</p>
+                            <a href="about.html" class="display-1 text-dark text-decoration-none">About Us</a>
+                        </div>
+                    </div>
+                    <div class="item w-100">
+                        <div class="text-center">
+                            <p class="text-center fst-italic fs-3 m-0">Some Questions</p>
+                            <a href="faq.html" class="display-1 text-dark text-decoration-none">FAQs</a>
+                        </div>
+                    </div>
+                    <div class="item w-100">
+                        <div class="text-center">
+                            <p class="text-center fst-italic fs-3 m-0">Let's Talk</p>
+                            <a href="contact.html" class="display-1 text-dark text-decoration-none">Contact US</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container pt-5 pb-2">
+            <div class="text-center">
+                <ul class="list-unstyled d-flex flex-wrap justify-content-center">
+                    <li class="px-2"><a class="text-dark text-uppercase text-decoration-none cool-link"
+                            href="index.html">Home</a></li>
+                    <li class="px-2"><a class="text-dark text-uppercase text-decoration-none cool-link"
+                            href="about.html">About Us</a></li>
+                    <li class="px-2"><a class="text-dark text-uppercase text-decoration-none cool-link"
+                            href="gallery.html">Gallery</a></li>
+                    <li class="px-2"><a class="text-dark text-uppercase text-decoration-none cool-link"
+                            href="contact.html">Contact</a></li>
+                    <li class="px-2"><a class="text-dark text-uppercase text-decoration-none cool-link" href="#">FAQ</a>
+                    </li>
+                    <li class="px-2"><a class="text-dark text-uppercase text-decoration-none cool-link"
+                            href="#">Instagram</a></li>
+                    <li class="px-2"><a class="text-dark text-uppercase text-decoration-none cool-link"
+                            href="#">Facebook</a></li>
+                    <li class="px-2"><a class="text-dark text-uppercase text-decoration-none cool-link"
+                            href="#">Pinterest</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
-
-<!--====== Fontawesome ======-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-
-
-
-<!-- end jquery -->
- <script src="../npm/%40fancyapps/ui%404.0/dist/fancybox.umd.js"></script>
-
-<!--====== wow js ======-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-<!--====== Main js ======-->
-<script src="assets/js/main.js"></script>
-
-<script>
-    AOS.init();
-</script>
-
-
-<script>
-    const cursor = document.querySelector('.cursor');
-    document.addEventListener('mousemove', (e) => {
-        cursor.style.left = e.clientX + 'px';
-        cursor.style.top = e.clientY + 'px';
-    })
-</script>
-
-<script>
-    $('.owl-footer').owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: false,
-        animateOut: 'animate__lightSpeedOutLeft',
-        animateIn: 'animate__lightSpeedInRight',
-        autoplay: true,
-        dots: false,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 1
-            },
-            1000: {
-                items: 1
-            }
-        }
-    })
-</script>
+    <a href="#top" id="topBtn" title="Go to top">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <div class="cursor" id="cursor"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

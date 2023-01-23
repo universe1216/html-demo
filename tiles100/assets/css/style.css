@@ -652,7 +652,18 @@ a:hover~.cursor {
     margin: 400px !important;
 }
 
-
-
+.preloader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  background-color: #000;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url('assets/images/logos/logo.gif');
+  background-size: contain;
+}
 
 
