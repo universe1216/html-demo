@@ -662,7 +662,7 @@ a:hover~.cursor {
   background-color: #000;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url('assets/images/logos/logo.gif');
+  background-image: url('../images/logos/logo.gif');
   background-size: contain;
 }
 
