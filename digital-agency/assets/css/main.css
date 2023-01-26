@@ -25,6 +25,10 @@ p {
   line-height: 1.5rem;
 }
 
+.container {
+  max-width: 90%;
+}
+
 .ratio-1 {
   width: 100px;
   height: 100px;
