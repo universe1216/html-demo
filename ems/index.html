@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMS || Home Page - HTML DEMO Template</title>
+    <link rel="shortcut icon" href="assets/images/logos/logofavicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <!--====== HEADER PART START ======-->
+    <div class="flex-shrink-0 p-3 pt-0 bg-white main-sidebar border border-right w-15">
+        <a href="/" class="d-flex align-items-center py-2 mb-3 link-dark text-decoration-none border-bottom">
+          <img src="./assets/images/logo.svg" style="width: 200px" alt="">
+        </a>
+        <ul class="list-unstyled ps-0 side-menu-items">
+          <!-- <li class="mb-1">
+            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+            <i class="bi bi-speedometer2"></i> Dashboard
+            </button>
+            <div class="collapse show" id="home-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Overview</a></li>
+                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Updates</a></li>
+                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Reports</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="mb-1">
+            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+              Dashboard
+            </button>
+            <div class="collapse" id="dashboard-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Overview</a></li>
+                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Weekly</a></li>
+                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Monthly</a></li>
+                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Annually</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="mb-1">
+            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+              Orders
+            </button>
+            <div class="collapse" id="orders-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">New</a></li>
+                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Processed</a></li>
+                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Shipped</a></li>
+                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Returned</a></li>
+              </ul>
+            </div>
+          </li> -->
+          <li class="sidebar-link mb-3">
+            <a href="./" class=" text-decoration-none rounded fw-semibold"> <i class="bi bi-speedometer2 mx-2"></i> Dashboard</a>
+          </li>
+          <li class="sidebar-link mb-3">
+            <a href="./attendance" class=" text-decoration-none rounded fw-semibold"> <i class="bi bi-person-check mx-2"></i> Attendance</a>
+          </li>
+          <li class="sidebar-link mb-3">
+            <a href="./leaves" class=" text-decoration-none rounded fw-semibold"> <i class="bi bi-calendar-x mx-2"></i> Leave</a>
+          </li>
+          <li class="sidebar-link mb-3">
+            <a href="./payroll" class=" text-decoration-none rounded fw-semibold"> <i class="bi bi-cash-coin mx-2"></i> Payroll</a>
+          </li>
+          <li class="sidebar-link mb-3">
+            <a href="./helpdesk" class=" text-decoration-none rounded fw-semibold"> <i class="bi bi-headset mx-2"></i> Helpdesk</a>
+          </li>
+          <li class="sidebar-link mb-3">
+            <a href="./notifications" class=" text-decoration-none rounded fw-semibold"> <i class="bi bi-bell mx-2"></i> Notifications</a>
+          </li>
+          <!-- <li class="border-top my-3"></li>
+          <li class="mb-1">
+            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+            <i class="bi bi-bell mx-2"></i> Notifications
+            </button>
+            <div class="collapse" id="account-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">New...</a></li>
+                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Profile</a></li>
+                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Settings</a></li>
+                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Sign out</a></li>
+              </ul>
+            </div>
+          </li> -->
+        </ul>
+      </div>
+    
+    <div class="container-fluid py-5">
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <div class="card rounded-3 p-4 h-100 border-0" style="background-image:linear-gradient(to right, #e2e0f0, #e6eef6)">
+                    <div class="d-flex justify-content-between">
+                        <div class="user-img">
+                            <img class="rounded-circle" src="./assets/images/userimg.jpg">
+                        </div>
+                        <div class="user-detail text-end">
+                            <h4 class="mb-0 fw-normal">Test Name</h4>
+                            <p class="text-muted fs-6">Designation</p>
+                        </diV>
+                    </div>
+                    <div class="breif-info mt-3">
+                        <ul class="list-unstyled">
+                            <li class="d-flex text-blue">
+                                <div class="info-name pe-2">Employee Id</div>
+                                <div class="flex-fill" style="min-width: 150px; border-bottom: 1px dotted #111"></div>
+                                <div class="info-number ps-2">012</div>
+                            </li>
+                            <li class="d-flex text-blue">
+                                <div class="info-name pe-2">Joining Date:</div>
+                                <div class="flex-fill" style="min-width: 150px; border-bottom: 1px dotted #111"></div>
+                                <div class="info-number ps-2">10/9/2020</div>
+                            </li>
+                            <li class="d-flex text-blue">
+                                <div class="info-name pe-2"> Date Of Birth:</div>
+                                <div class="flex-fill" style="min-width: 150px; border-bottom: 1px dotted #111"></div>
+                                <div class="info-number ps-2">12/10/1999</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card rounded-3 p-4 h-100 border-0 overflow-hidden" style="background-image:linear-gradient(to right, #ace2f8, #b3dced)">
+                    <img class="position-absolute end-0 bottom-0 opacity-50" src="./assets/images/user-avatar.png">
+                    <div class="d-flex flex-column align-content-stretch justify-content-between h-100">
+                        <div class="leave-counter">
+                            <h4 class="fw-normal mb-0">Salary:</h4>
+                            <p class="text-dark fs-3">30000</p>
+                        </div>
+                        <div class="total-leave">
+                            <h4 class="fw-normal mb-0">Per Day Salary:</h4>
+                            <p class="text-dark fs-3">₹ 1000</p>
+                        </diV>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card rounded-3 p-4 h-100 border-0 overflow-hidden" style="background-image:linear-gradient(to right, #ffd3db, #ffdde3)">
+                    <img class="position-absolute end-0 bottom-0 opacity-50" src="./assets/images/user-avatar2.png">
+                    <div class="d-flex flex-column align-content-stretch justify-content-between h-100">
+                        <div class="leave-counter">
+                            <h4 class="fw-normal mb-0">Leave:</h4>
+                            <p class="text-dark fs-3">0</p>
+                        </div>
+                        <div class="total-leave">
+                            <h4 class="fw-normal mb-0">Total Leave:</h4>
+                            <p class="text-dark fs-3">5</p>
+                        </diV>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="table-section pt-5">
+            <div class="row m-0">
+                <div class="col-lg-6 mb-3">
+                    <h4 class="text-primary fw-normal">Attendance Summary</h4>
+                    <div class="table-responsive card rounded-3 p-3">
+                        <table class="table table-hover" id="myTable">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Start Time</th>
+                                    <th scope="col">End Time</th>
+                                    <th scope="col">Location</th>
+                                    <th scope="col">Leave</th>
+                                    <th scope="col">Deduction</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>6 Oct</td>
+                                    <td>9:00 AM</td>
+                                    <td>6:30 AM</td>
+                                    <td>Office</td>
+                                    <td>0</td>
+                                    <td>0.00</td>
+                                </tr>
+                                <tr>
+                                    <td>6 Oct</td>
+                                    <td>9:00 AM</td>
+                                    <td>6:30 AM</td>
+                                    <td>Office</td>
+                                    <td>0</td>
+                                    <td>0.00</td>
+                                </tr>
+                                <tr>
+                                    <td>6 Oct</td>
+                                    <td>9:00 AM</td>
+                                    <td>6:30 AM</td>
+                                    <td>Office</td>
+                                    <td>0</td>
+                                    <td>0.00</td>
+                                </tr>
+                                <tr>
+                                    <td>6 Oct</td>
+                                    <td>9:00 AM</td>
+                                    <td>6:30 AM</td>
+                                    <td>Office</td>
+                                    <td>0</td>
+                                    <td>0.00</td>
+                                </tr>
+                                <tr>
+                                    <td>6 Oct</td>
+                                    <td>9:00 AM</td>
+                                    <td>6:30 AM</td>
+                                    <td>Office</td>
+                                    <td>0</td>
+                                    <td>0.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-3">
+                    <h4 class="text-primary fw-normal">Leave History</h4>
+                    <div class="table-responsive card rounded-3 p-3">
+                        <table class="table table-hover" id="myTableTwo">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Type</th>
+                                    <th scope="col">Time</th>
+                                    <th scope="col">Leave</th>
+                                    <th scope="col">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>02 Oct - 05 Oct</td>
+                                    <td>Sick</td>
+                                    <td>1<sup>st</sup> half</td>
+                                    <td>Full Day</td>
+                                    <td><span class="text-success">Approved</span></td>
+                                </tr>
+                                <tr>
+                                    <td>02 Oct - 05 Oct</td>
+                                    <td>Sick</td>
+                                    <td>1<sup>st</sup> half</td>
+                                    <td>Full Day</td>
+                                    <td><span class="text-success">Approved</span></td>
+                                </tr>
+                                <tr>
+                                    <td>02 Oct - 05 Oct</td>
+                                    <td>Sick</td>
+                                    <td>1<sup>st</sup> half</td>
+                                    <td>Full Day</td>
+                                    <td><span class="text-success">Approved</span></td>
+                                </tr>
+                                <tr>
+                                    <td>02 Oct - 05 Oct</td>
+                                    <td>Sick</td>
+                                    <td>1<sup>st</sup> half</td>
+                                    <td>Full Day</td>
+                                    <td><span class="text-success">Approved</span></td>
+                                </tr>
+                                <tr>
+                                    <td>02 Oct - 05 Oct</td>
+                                    <td>Sick</td>
+                                    <td>1<sup>st</sup> half</td>
+                                    <td>Full Day</td>
+                                    <td><span class="text-success">Approved</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="more-tables py-4">
+            <div class="row">
+                <div class="col-lg-6 mb-3">
+                    <h4 class="text-primary fw-normal">Attendance Summary</h4>
+                    <div class="table-responsive card rounded-3 p-3">
+                        <table class="table table-hover" id="myTable">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img class="rounded-circle img-sm" src="">
+                                    </td>
+                                    <td>9:00 AM</td>
+                                    <td>6:30 AM</td>
+                                </tr>
+                                <tr>
+                                    <td>6 Oct</td>
+                                    <td>9:00 AM</td>
+                                    <td>6:30 AM</td>
+                                </tr>
+                                <tr>
+                                    <td>6 Oct</td>
+                                    <td>9:00 AM</td>
+                                    <td>6:30 AM</td>
+                                </tr>
+                                <tr>
+                                    <td>6 Oct</td>
+                                    <td>9:00 AM</td>
+                                    <td>6:30 AM</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <!-- <footer class="bg-footer">
+    <div class="py-3 mt-4 footer-bottom container border-top border-1 border-secondary">
+        <div class="row m-0">
+            <div class="col-md-12 text-center text-white">
+                <p>Copyright &copy;<script>
+                        document.write(new Date().getFullYear());
+                    </script> All rights reserved by E Global Soft Solutions</p>
+                     | Designed by <a target="_blank" href="#" class="text-white">Shubham Singh</a>
+            </div>
+        </div>
+    </div>
+</footer> -->
+
+<button onclick="topFunction()" id="topBtn" title="Go to top"><i class="fa-solid fa-angle-up"></i></button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
