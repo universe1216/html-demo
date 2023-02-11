@@ -7,4 +7,11 @@
 5. Juice Website
 6. Exterior and Interior Design
 7. Portfolio
-8. Tiles Website 
+8. Tiles Website
+9. Clothes Ecommerce Website
+10. EMS Website
+11. Gym Website
+12. NFT Website
+13. Plants Ecommerce Website
+14. Point Of Contact Website
+15. Yoga Website
