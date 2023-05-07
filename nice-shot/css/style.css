@@ -450,6 +450,15 @@ small {
     filter: invert(0) grayscale(100) !important;
     border-radius: 50%;
     border: 1px solid #fff;
+    background-size: 1.25rem;
+}
+
+.carousel-control-prev-icon {
+    background-position: 40% 50%;
+}
+
+.carousel-control-next-icon {
+    background-position: 60% 50%;
 }
 
 .carousel-item img {
@@ -798,7 +807,22 @@ button.nav-link.active img {
 
 /* team */
 
+.member-container {
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
 
+.member-container .img-block {
+    overflow: hidden;
+}
+
+.member-container .img-block img {
+    transition: 0.3s ease-in-out;
+}
+
+.member-container .img-block:hover img {
+    transform: scale(1.1);
+}
 
 .parallax-window {
     min-height: 400px;
