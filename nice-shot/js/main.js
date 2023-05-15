@@ -9,16 +9,39 @@ $(function () {
         });
     });
 
+    $('.grid').isotope({
+        // options...
+        itemSelector: '.grid-item',
+        masonry: {
+            columnWidth: 300
+        }
+    });
 
+    // Isotope Active Masonry Gallery
+    $('.gallery-items').imagesLoaded(function () {
+        // Add isotope on click filter function
+        $('.gallery-filter li').on('click', function () {
+            $(".gallery-filter li").removeClass("active");
+            $(this).addClass("active");
+            var selector = $(this).attr('data-filter');
+            $(".gallery-items").isotope({
+                filter: selector
+                , animationOptions: {
+                    duration: 750
+                    , easing: 'linear'
+                    , queue: false
+                    ,
+                }
+            });
+            return false;
+        });
+        $(".gallery-items").isotope({
+            itemSelector: '.single-item'
+            , layoutMode: 'masonry'
+            ,
+        });
+    });
 
-});
-
-$('.grid').isotope({
-    // options...
-    itemSelector: '.grid-item',
-    masonry: {
-        columnWidth: 300
-    }
 });
 
 // insta slider
@@ -61,7 +84,7 @@ const slider = tns({
 const blogCarousel = tns({
     container: '.blog-slider',
     loop: true,
-    items: 3,
+    items: 1,
     slideBy: '1',
     nav: true,
     controls: true,
@@ -70,22 +93,7 @@ const blogCarousel = tns({
     autoplayButtonOutput: false,
     mouseDrag: true,
     controlsContainer: "#customize-controls",
-    lazyload: true,
-    responsive: {
-        0: {
-            items: 1,
-        },
-        600: {
-            items: 1,
-        },
-
-        768: {
-            items: 1,
-        },
-        991: {
-            items: 1,
-        }
-    }
+    lazyload: true
 });
 
 // testimonial slider
@@ -234,32 +242,6 @@ function topFunction() {
 
 
 // $('.parallax-window').parallax({imageSrc: '/path/to/image.jpg'});
-
-
-// Isotope Active Masonry Gallery
-$('.gallery-items').imagesLoaded(function () {
-    // Add isotope on click filter function
-    $('.gallery-filter li').on('click', function () {
-        $(".gallery-filter li").removeClass("active");
-        $(this).addClass("active");
-        var selector = $(this).attr('data-filter');
-        $(".gallery-items").isotope({
-            filter: selector
-            , animationOptions: {
-                duration: 750
-                , easing: 'linear'
-                , queue: false
-                ,
-            }
-        });
-        return false;
-    });
-    $(".gallery-items").isotope({
-        itemSelector: '.single-item'
-        , layoutMode: 'masonry'
-        ,
-    });
-});
 
 // Animations
 var contentWayPoint = function () {

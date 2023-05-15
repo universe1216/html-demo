@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nice.Shot Productions</title>
+    <title>Nice.Shot Photograpy</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
@@ -16,43 +17,44 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body class="bg-dark">
-
+<body class="bg-black">
     <header class="fixed-top navbar-scroller">
-        <div class="progress-container">
-            <div class="progress-bar" id="myBar"></div>
-        </div>
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent p-0" aria-label="Main Header">
             <div class="container-xl">
-                <a class="navbar-brand" href="./">
-                    <div class="logo"></div>
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./img/photography-logo.png" alt="logo">
                 </a>
-                <button class="btn d-lg-none d-block" type="button" data-bs-toggle="offcanvas"
+                <!-- <button class="btn d-lg-none d-block" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasHeader" aria-controls="offcanvasHeader">
                     <i class="fa-solid fa-bars"></i>
-                </button>
+                </button> -->
                 <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarsHeader07XL" aria-controls="navbarsHeader07XL" aria-expanded="false"
+                    data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="fa-solid fa-bars"></i>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarsHeader07XL">
+                <div class="collapse navbar-collapse" id="navbarHeader">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./">home</a>
-                        </li> <li class="nav-item">
-                            <a class="nav-link " href="./about.html">about</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link" href="portfolio">portfolio</a>
+                            <a class="nav-link" href="./index.html">home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="blogs">blogs</a>
+                            <a class="nav-link" href="./about.html">about</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./portfolio.html">portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="btn btn-outline-light rounded-pill" target="_blank" href="contact">contact
+                            <a class="nav-link" href="./servicesandpricing.html">services and packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blogs.html">blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-light rounded-pill text-uppercase" target="_blank"
+                                href="contact.html">contact
                                 us</a>
                         </li>
                     </ul>
@@ -60,93 +62,388 @@
             </div>
         </nav>
     </header>
-    <section id="banner">
-        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="5000">
-                    <img src="./img/slider-1.jpg"
-                        class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h2>First slide label</h2>
-                        <p>Some representative placeholder content for the first slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="5000">
-                    <img src="./img/slider-2.jpg"
-                        class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h2>Second slide label</h2>
-                        <p>Some representative placeholder content for the second slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="5000">
-                    <img src="./img/slider-3.jpg"
-                        class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h2>Third slide label</h2>
-                        <p>Some representative placeholder content for the third slide.</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+
+    <section id="pagebanner parallax-window py-5" data-parallax="scroll" data-image-src="./img/background.jpg">
+        <div class="container py-5">
+            <h1 class="display-1 text-center py-5 fw-bold">Our Work</h1>
         </div>
     </section>
-    <section id="intro">
-        <div class="container py-5">
-            <div class="row align-items-center align-content-center">
-                <div class="banner-text col-lg-7">
-                    <h1 class="text-white fs-7" data-aos="fade-up">Empowering our entrepreneurs to shift the future of
-                        aerospace.</h1>
+
+    <section id="work" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-left">
+                    <ul class="gallery-filter list-unstyled d-flex flex-wrap">
+                        <li class="btn btn-sm rounded-pill btn-outline-light me-2" class="active" data-filter="*">All
+                        </li>
+                        <li class="btn btn-sm rounded-pill btn-outline-light me-2" data-filter=".boudoir">Boudoir</li>
+                        <li class="btn btn-sm rounded-pill btn-outline-light me-2" data-filter=".family">Family</li>
+                        <li class="btn btn-sm rounded-pill btn-outline-light me-2" data-filter=".kids">Kids</li>
+                        <li class="btn btn-sm rounded-pill btn-outline-light me-2" data-filter=".fashion">Fashion</li>
+                        <li class="btn btn-sm rounded-pill btn-outline-light me-2" data-filter=".product">Product</li>
+                        <li class="btn btn-sm rounded-pill btn-outline-light me-2" data-filter=".wedding">Wedding</li>
+                    </ul>
                 </div>
-                <div class="banner-text col-lg-5">
-                    <p class="text-white fs-5" data-aos="fade-up">Digital Agency invests in autonomous mobility,
-                        electrification, low-carbon economy, advanced materials, manufacturing systems, next-generation
-                        computing, sensing, security, and beyond.</p>
-                    <a class="btn btn-lg rounded-pill" href="./portfolio" data-aos="fade-up">WHO WE FUND </a>
+            </div>
+            <div class="row gallery-items">
+                <div class="col-md-4 gallery-masonry-wrapper single-item mb-3 product">
+                    <a data-fancybox="responsive" data-caption="hello world" data-src="img/gallery1.jpg" title=""
+                        class="gallery-masonry-item-img-link img-zoom">
+                        <div class="gallery-box">
+                            <div class="gallery-img"> <img src="img/gallery1.jpg" class="img-fluid mx-auto d-block"
+                                    alt=""> </div>
+
+                            <div class="gallery-masonry-item-content">
+                                <div class="gallery-masonry-item-category">Bicycle</div>
+                                <h4 class="gallery-masonry-item-title">Product
+                                </h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-masonry-wrapper single-item mb-3 family">
+                    <a data-fancybox="responsive" data-caption="hello world" data-src="img/gallery2.jpg" title=""
+                        class="gallery-masonry-item-img-link img-zoom">
+                        <div class="gallery-box">
+                            <div class="gallery-img"> <img src="img/gallery2.jpg" class="img-fluid mx-auto d-block"
+                                    alt=""> </div>
+
+                            <div class="gallery-masonry-item-content">
+                                <div class="gallery-masonry-item-category">Beach Out
+                                </div>
+                                <h4 class="gallery-masonry-item-title">Family
+                                </h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-masonry-wrapper single-item mb-3 fashion">
+                    <a data-fancybox="responsive" data-caption="hello world" data-src="img/gallery4.jpg" title=""
+                        class="gallery-masonry-item-img-link img-zoom">
+                        <div class="gallery-box">
+                            <div class="gallery-img"> <img src="img/gallery4.jpg" class="img-fluid mx-auto d-block"
+                                    alt=""> </div>
+
+                            <div class="gallery-masonry-item-content">
+                                <div class="gallery-masonry-item-category">Profile</div>
+                                <h4 class="gallery-masonry-item-title">Fashion</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-masonry-wrapper single-item mb-3 boudoir">
+                    <a data-fancybox="responsive" data-caption="hello world" data-src="img/gallery5.jpg" title=""
+                        class="gallery-masonry-item-img-link img-zoom">
+                        <div class="gallery-box">
+                            <div class="gallery-img"> <img src="img/gallery5.jpg" class="img-fluid mx-auto d-block"
+                                    alt=""> </div>
+
+                            <div class="gallery-masonry-item-content">
+                                <div class="gallery-masonry-item-category">Model</div>
+                                <h4 class="gallery-masonry-item-title">Boudoir</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-masonry-wrapper single-item mb-3 fashion">
+                    <a data-fancybox="responsive" data-caption="hello world" data-src="img/gallery6.jpg" title=""
+                        class="gallery-masonry-item-img-link img-zoom">
+                        <div class="gallery-box">
+                            <div class="gallery-img"> <img src="img/gallery6.jpg" class="img-fluid mx-auto d-block"
+                                    alt=""> </div>
+
+                            <div class="gallery-masonry-item-content">
+                                <div class="gallery-masonry-item-category">PV Store</div>
+                                <h4 class="gallery-masonry-item-title">Fashion</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-masonry-wrapper single-item mb-3 family">
+                    <a data-fancybox="responsive" data-caption="hello world" data-src="img/gallery3.jpg" title=""
+                        class="gallery-masonry-item-img-link img-zoom">
+                        <div class="gallery-box">
+                            <div class="gallery-img"> <img src="img/gallery3.jpg" class="img-fluid mx-auto d-block"
+                                    alt=""> </div>
+
+                            <div class="gallery-masonry-item-content">
+                                <div class="gallery-masonry-item-category">The Oxlade Sisters
+                                </div>
+                                <h4 class="gallery-masonry-item-title">Family
+                                </h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-masonry-wrapper single-item mb-3 boudoir">
+                    <a data-fancybox="responsive" data-caption="hello world" data-src="img/gallery7.jpg" title=""
+                        class="gallery-masonry-item-img-link img-zoom">
+                        <div class="gallery-box">
+                            <div class="gallery-img"> <img src="img/gallery7.jpg" class="img-fluid mx-auto d-block"
+                                    alt=""> </div>
+
+                            <div class="gallery-masonry-item-content">
+                                <div class="gallery-masonry-item-category">Photoshoot</div>
+                                <h4 class="gallery-masonry-item-title">Boudoir</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-masonry-wrapper single-item mb-3 product">
+                    <a data-fancybox="responsive" data-caption="hello world" data-src="img/gallery8.jpg" title=""
+                        class="gallery-masonry-item-img-link img-zoom">
+                        <div class="gallery-box">
+                            <div class="gallery-img"> <img src="img/gallery8.jpg" class="img-fluid mx-auto d-block"
+                                    alt=""> </div>
+
+                            <div class="gallery-masonry-item-content">
+                                <div class="gallery-masonry-item-category">Sunglassess
+                                </div>
+                                <h4 class="gallery-masonry-item-title">Product</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-masonry-wrapper single-item mb-3 kids">
+                    <a data-fancybox="responsive" data-caption="hello world" data-src="img/gallery9.jpg" title=""
+                        class="gallery-masonry-item-img-link img-zoom">
+                        <div class="gallery-box">
+                            <div class="gallery-img"> <img src="img/gallery9.jpg" class="img-fluid mx-auto d-block"
+                                    alt=""> </div>
+
+                            <div class="gallery-masonry-item-content">
+                                <div class="gallery-masonry-item-category">Colorful Kid</div>
+                                <h4 class="gallery-masonry-item-title">Kids</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-masonry-wrapper single-item mb-3 fashion">
+                    <a data-fancybox="responsive" data-caption="hello world" data-src="img/gallery10.jpg" title=""
+                        class="gallery-masonry-item-img-link img-zoom">
+                        <div class="gallery-box">
+                            <div class="gallery-img"> <img src="img/gallery10.jpg" class="img-fluid mx-auto d-block"
+                                    alt=""> </div>
+
+                            <div class="gallery-masonry-item-content">
+                                <div class="gallery-masonry-item-category">Women Hat</div>
+                                <h4 class="gallery-masonry-item-title">Fashion</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-masonry-wrapper single-item mb-3 kids">
+                    <a data-fancybox="responsive" data-caption="hello world" data-src="img/gallery11.jpg" title=""
+                        class="gallery-masonry-item-img-link img-zoom">
+                        <div class="gallery-box">
+                            <div class="gallery-img"> <img src="img/gallery11.jpg" class="img-fluid mx-auto d-block"
+                                    alt=""> </div>
+
+                            <div class="gallery-masonry-item-content">
+                                <div class="gallery-masonry-item-category">Little Playful Jason</div>
+                                <h4 class="gallery-masonry-item-title">Kids</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-masonry-wrapper single-item mb-3 fashion">
+                    <a data-fancybox="responsive" data-caption="hello world" data-src="img/gallery12.jpg" title=""
+                        class="gallery-masonry-item-img-link img-zoom">
+                        <div class="gallery-box">
+                            <div class="gallery-img"> <img src="img/gallery12.jpg" class="img-fluid mx-auto d-block"
+                                    alt=""> </div>
+
+                            <div class="gallery-masonry-item-content">
+                                <div class="gallery-masonry-item-category">Kino's Lingrie</div>
+                                <h4 class="gallery-masonry-item-title">Fashion</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-masonry-wrapper single-item mb-3 wedding">
+                    <a data-fancybox="responsive" data-caption="hello world" data-src="img/gallery13.jpg" title=""
+                        class="gallery-masonry-item-img-link img-zoom">
+                        <div class="gallery-box">
+                            <div class="gallery-img"> <img src="img/gallery13.jpg" class="img-fluid mx-auto d-block"
+                                    alt=""> </div>
+
+                            <div class="gallery-masonry-item-content">
+                                <div class="gallery-masonry-item-category">Wedding Day</div>
+                                <h4 class="gallery-masonry-item-title">Wedding</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-masonry-wrapper single-item mb-3 wedding">
+                    <a data-fancybox="responsive" data-caption="hello world" data-src="img/gallery14.jpg" title=""
+                        class="gallery-masonry-item-img-link img-zoom">
+                        <div class="gallery-box">
+                            <div class="gallery-img"> <img src="img/gallery14.jpg" class="img-fluid mx-auto d-block"
+                                    alt=""> </div>
+
+                            <div class="gallery-masonry-item-content">
+                                <div class="gallery-masonry-item-category">Wedding Photoshoot</div>
+                                <h4 class="gallery-masonry-item-title">Wedding</h4>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="intro">
-        <div class="container py-5">
-            <div class="my-slider">
-                <div>
-                    <div style="width: auto; height: 300px; background-image: url('./img/slider-1.jpg'); background-size: cover"
-                        class="img-fluid"></div>
+    <section id="instaZone">
+        <div class="container-fluid p-0">
+            <div class="insta-slider">
+                <div class="insta-item">
+                    <div class="position-relative"
+                        style="width: auto; height: 300px; background-image: url('./img/insta-1.jpg'); background-size: cover"
+                        class="img-fluid">
+                        <span
+                            class="bg-dark h-100 w-100 d-flex align-items-center justify-content-center text-light fs-1"
+                            style="--bs-bg-opacity: 0.4">
+                            <i class="bi bi-instagram"></i>
+                        </span>
+                        <a href="#" class="stretched-link"></a>
+                    </div>
                 </div>
-                <div>
-                    <div style="width: auto; height: 300px; background-image: url('./img/slider-2.jpg'); background-size: cover"
-                        class="img-fluid"></div>
+                <div class="insta-item">
+                    <div class="position-relative"
+                        style="width: auto; height: 300px; background-image: url('./img/insta-2.jpg'); background-size: cover"
+                        class="img-fluid">
+                        <span
+                            class="bg-dark h-100 w-100 d-flex align-items-center justify-content-center text-light fs-1"
+                            style="--bs-bg-opacity: 0.4">
+                            <i class="bi bi-instagram"></i>
+                        </span>
+                        <a href="#" class="stretched-link"></a>
+                    </div>
                 </div>
-                <div>
-                    <div style="width: auto; height: 300px; background-image: url('./img/slider-3.jpg'); background-size: cover"
-                        class="img-fluid"></div>
+                <div class="insta-item">
+                    <div class="position-relative"
+                        style="width: auto; height: 300px; background-image: url('./img/insta-3.jpg'); background-size: cover"
+                        class="img-fluid">
+                        <span
+                            class="bg-dark h-100 w-100 d-flex align-items-center justify-content-center text-light fs-1"
+                            style="--bs-bg-opacity: 0.4">
+                            <i class="bi bi-instagram"></i>
+                        </span>
+                        <a href="#" class="stretched-link"></a>
+                    </div>
                 </div>
-                <div>
-                    <div style="width: auto; height: 300px; background-image: url('./img/slider-3.jpg'); background-size: cover"
-                        class="img-fluid"></div>
+                <div class="insta-item">
+                    <div class="position-relative"
+                        style="width: auto; height: 300px; background-image: url('./img/insta-4.jpg'); background-size: cover"
+                        class="img-fluid">
+                        <span
+                            class="bg-dark h-100 w-100 d-flex align-items-center justify-content-center text-light fs-1"
+                            style="--bs-bg-opacity: 0.4">
+                            <i class="bi bi-instagram"></i>
+                        </span>
+                        <a href="#" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="insta-item">
+                    <div class="position-relative"
+                        style="width: auto; height: 300px; background-image: url('./img/insta-5.jpg'); background-size: cover"
+                        class="img-fluid">
+                        <span
+                            class="bg-dark h-100 w-100 d-flex align-items-center justify-content-center text-light fs-1"
+                            style="--bs-bg-opacity: 0.4">
+                            <i class="bi bi-instagram"></i>
+                        </span>
+                        <a href="#" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="insta-item">
+                    <div class="position-relative"
+                        style="width: auto; height: 300px; background-image: url('./img/insta-6.jpg'); background-size: cover"
+                        class="img-fluid">
+                        <span
+                            class="bg-dark h-100 w-100 d-flex align-items-center justify-content-center text-light fs-1"
+                            style="--bs-bg-opacity: 0.4">
+                            <i class="bi bi-instagram"></i>
+                        </span>
+                        <a href="#" class="stretched-link"></a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <footer class="">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <a class="mb-2 footer-brand" href="./">
+                        <img class="img-fluid" src="./img/photography-logo.png" alt="logo">
+                    </a>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum aspernatur natus dolores veniam
+                        ex quidem quod consequatur delectus alias. Quo, mollitia earum. Iusto reiciendis consectetur
+                        eveniet cumque? Odio, vero possimus!</p>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-3">
+                    <h5>Packages</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-3">
+                    <h5>Contact Us</h5>
+                    <p class="d-flex">
+                        <i class="text-light fs-5 fa-solid fa-location-dot"></i>
+                        <a target="_blank" class=" ms-2 text-decoration-none text-white" href="javascript:void(0)">14782
+                            Dummy St, Cosperia, SF 32391, GSA</a>
+                    </p>
+                    <p class="d-flex">
+                        <i class="text-light fs-5 fa-solid fa-envelope"></i>
+                        <a class=" ms-2 text-decoration-none text-white" href="javascript:void(0)">
+                            info@vbthemes.com
+                        </a>
+                    </p>
+                    <p class="d-flex">
+                        <i class="text-light fs-5 fa-solid fa-phone"></i>
+                        <span>
+                            <a class="ms-2 text-decoration-none text-white d-block" href="tel:+911234567890">
+                                +91 1234567890</a>
+                        </span>
+                    </p>
+                </div>
+                <div class="col-lg-5 col-md-12 mb-3">
+                    <form action="javascript:void(0)">
+                        <h5>Subscribe to our newsletter</h5>
+                        <p>Monthly digest of what's new and exciting from us.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                            <button class="btn btn-dark" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-2 border-top">
+                <p>&copy; 2022 Shubham Singh. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-light" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#twitter" />
+                            </svg></a></li>
+                    <li class="ms-3"><a class="link-light" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#instagram" />
+                            </svg></a></li>
+                    <li class="ms-3"><a class="link-light" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#facebook" />
+                            </svg></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
 
     <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="bi bi-arrow-up"></i></button>
@@ -154,11 +451,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js">	</script>
     <script src="./js/main.js"></script>
 </body>
 
