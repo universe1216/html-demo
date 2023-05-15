@@ -44,120 +44,6 @@ $(function () {
 
 });
 
-// insta slider
-
-const slider = tns({
-    container: '.insta-slider',
-    loop: true,
-    items: 6,
-    slideBy: '1',
-    nav: false,
-    controls: false,
-    autoplay: true,
-    speed: 400,
-    autoplayButtonOutput: false,
-    mouseDrag: true,
-    lazyload: true,
-    responsive: {
-        0: {
-            items: 1,
-        },
-        600: {
-            items: 2,
-        },
-
-        768: {
-            items: 3,
-        },
-        991: {
-            items: 4,
-        },
-        1199: {
-            items: 5,
-        }
-    }
-
-});
-
-// blog slider
-
-const blogCarousel = tns({
-    container: '.blog-slider',
-    loop: true,
-    items: 1,
-    slideBy: '1',
-    nav: true,
-    controls: true,
-    autoplay: true,
-    speed: 400,
-    autoplayButtonOutput: false,
-    mouseDrag: true,
-    controlsContainer: "#customize-controls",
-    lazyload: true
-});
-
-// testimonial slider
-
-const testimonialCarousel = tns({
-    container: '.testimonial-slider',
-    loop: true,
-    items: 3,
-    slideBy: '1',
-    nav: true,
-    controls: true,
-    autoplay: true,
-    speed: 400,
-    autoplayButtonOutput: false,
-    mouseDrag: true,
-    lazyload: true,
-    controlsContainer: "#testimonial-controls",
-    responsive: {
-        0: {
-            items: 1,
-        },
-        600: {
-            items: 1,
-        },
-        768: {
-            items: 1,
-        },
-        991: {
-            items: 1,
-        }
-    }
-});
-
-// services slider
-
-const servicesCarousel = tns({
-    container: '.services-slider',
-    loop: true,
-    items: 3,
-    slideBy: '1',
-    center: 'true',
-    nav: false,
-    controls: false,
-    autoplay: true,
-    speed: 400,
-    autoplayButtonOutput: false,
-    mouseDrag: true,
-    lazyload: true,
-    responsive: {
-        0: {
-            items: 1,
-        },
-        576: {
-            items: 1,
-        },
-        768: {
-            items: 2,
-        },
-        991: {
-            items: 3,
-        }
-    }
-});
-
 
 $(function () {
     $(document).scroll(function () {
@@ -174,44 +60,6 @@ jQuery(function ($) {
         }
     });
 });
-
-
-
-// $(document).ready(function () {
-//     setTimeout(function () {
-
-//         $(window).scroll(function () {
-//             var top_of_element = $(".carrier").offset().top + 800;
-//             var bottom_of_element = $(".carrier").offset().top + $(".carrier").outerHeight() - 1000;
-//             var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
-//             var top_of_screen = $(window).scrollTop();
-
-//             if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)) {
-//                 $(".mockIt").css({
-//                     "mix-blend-mode": "difference",
-//                     "transition": "all 1s ease"
-//                 });
-//                 $(".hideIt").css({
-//                     "display": "block",
-//                     "opacity": "1",
-//                     "transition": "all 1s ease"
-//                 });
-
-//             } else {
-//                 $(".mockIt").css({
-//                     "mix-blend-mode": "normal",
-//                     "transition": "all 1s ease"
-//                 });
-//                 $(".hideIt").css({
-//                     "display": "none",
-//                     "opacity": "0",
-//                     "transition": "all 1s ease"
-//                 });
-//             }
-//         });
-//     }, 200);
-// });
-
 
 AOS.init();
 
@@ -280,31 +128,6 @@ $(function () {
     contentWayPoint();
 });
 
-// YouTubePopUp
-// $("a.vid").YouTubePopUp();
-
-// const counterUp = window.counterUp.default
-
-// const callback = entries => {
-// 	entries.forEach( entry => {
-// 		const el = entry.target
-// 		if ( entry.isIntersecting && ! el.classList.contains( 'is-visible' ) ) {
-// 			counterUp( el, {
-// 				duration: 2000,
-// 				delay: 16,
-// 			} )
-// 			el.classList.add( 'is-visible' )
-// 		}
-// 	} )
-// }
-
-// const IO = new IntersectionObserver( callback, { threshold: 1 } )
-
-// const el = document.querySelector( '.counter-section' )
-// IO.observe( el )
-
-// counter section
-
 var a = 0;
 $(window).scroll(function () {
 
@@ -346,5 +169,133 @@ jQuery(function ($) {
         }
     });
 });
+
+// insta slider
+
+const slider = tns({
+    container: '.insta-slider',
+    loop: true,
+    items: 6,
+    slideBy: '1',
+    nav: false,
+    controls: false,
+    autoplay: true,
+    speed: 400,
+    autoplayButtonOutput: false,
+    mouseDrag: true,
+    lazyload: true,
+    responsive: {
+        0: {
+            items: 1,
+        },
+        600: {
+            items: 2,
+        },
+
+        768: {
+            items: 3,
+        },
+        991: {
+            items: 4,
+        },
+        1199: {
+            items: 5,
+        }
+    }
+});
+
+// blog slider
+
+const blogCarousel = tns({
+    container: '.blog-slider',
+    loop: true,
+    items: 1,
+    slideBy: '1',
+    nav: true,
+    controls: true,
+    autoplay: true,
+    speed: 400,
+    autoplayButtonOutput: false,
+    mouseDrag: true,
+    controlsContainer: "#customized-controls",
+    lazyload: true,
+    responsive: {
+        0: {
+            items: 1,
+        },
+        600: {
+            items: 1,
+        },
+        768: {
+            items: 1,
+        },
+        991: {
+            items: 1,
+        }
+    }
+});
+
+// testimonial slider
+
+const testimonialCarousel = tns({
+    container: '.testimonial-slider',
+    loop: true,
+    items: 3,
+    slideBy: '1',
+    nav: true,
+    controls: true,
+    autoplay: true,
+    speed: 400,
+    autoplayButtonOutput: false,
+    mouseDrag: true,
+    lazyload: true,
+    controlsContainer: "#testimonial-controls",
+    responsive: {
+        0: {
+            items: 1,
+        },
+        600: {
+            items: 1,
+        },
+        768: {
+            items: 1,
+        },
+        991: {
+            items: 1,
+        }
+    }
+});
+
+// services slider
+
+const servicesCarousel = tns({
+    container: '.services-slider',
+    loop: true,
+    items: 3,
+    slideBy: '1',
+    center: 'true',
+    nav: false,
+    controls: false,
+    autoplay: true,
+    speed: 400,
+    autoplayButtonOutput: false,
+    mouseDrag: true,
+    lazyload: true,
+    responsive: {
+        0: {
+            items: 1,
+        },
+        576: {
+            items: 1,
+        },
+        768: {
+            items: 2,
+        },
+        991: {
+            items: 3,
+        }
+    }
+});
+
 
 
