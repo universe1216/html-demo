@@ -235,7 +235,6 @@ small {
     transition: 0.3s ease;
 }
 
-
 /* accordion */
 
 .accordion-collapse {
@@ -369,8 +368,13 @@ small {
     padding: 0px 12px !important;
 }
 
-#customize-controls {
+#customized-controls {
     display: flex;
+    gap: 20px;
+}
+
+.prev , .next {
+    cursor: pointer;
 }
 
 .logos:hover {
@@ -403,13 +407,14 @@ small {
 }
 
 .carousel-caption h5 {
-    transform: translateY(3rem);
+    transform: translateY(3.25rem);
     transition: transform 0.5s ease-in-out;
     overflow: hidden;
 }
 
 .carousel-caption h2 {
-    transform: translateY(5.2rem);
+    transform: translateY(5.5rem);
+    line-height: 1.3;
     transition: transform 1s ease-in-out;
     overflow: hidden;
 }
