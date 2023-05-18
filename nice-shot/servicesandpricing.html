@@ -9,7 +9,7 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
@@ -29,31 +29,32 @@
                     <i class="fa-solid fa-bars"></i>
                 </button> -->
                 <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarsHeader07XL" aria-controls="navbarsHeader07XL" aria-expanded="false"
+                    data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <i class="fa-solid fa-bars"></i>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarsHeader07XL">
+                <div class="collapse navbar-collapse" id="navbarHeader">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">home</a>
+                            <a class="nav-link" href="./index.html">home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="./about.html">about</a>
+                            <a class="nav-link" href="./about.html">about</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html">portfolio</a>
+                            <a class="nav-link" href="./portfolio.html">portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html">services and packages</a>
+                            <a class="nav-link" href="./servicesandpricing.html">services and packages</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="blogs.html">blogs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="btn btn-outline-light rounded-pill" target="_blank" href="contact.html">contact
+                            <a class="btn btn-outline-light rounded-pill text-uppercase" target="_blank"
+                                href="contact.html">contact
                                 us</a>
                         </li>
                     </ul>
@@ -61,7 +62,13 @@
             </div>
         </nav>
     </header>
-    
+
+    <section id="pagebanner parallax-window py-5" data-parallax="scroll" data-image-src="./img/background.jpg">
+        <div class="container py-5">
+            <h1 class="display-1 text-center py-5 fw-bold">Services And Pricing Plans</h1>
+        </div>
+    </section>
+
     <section id="services">
         <div class="container py-5">
             <div class="row">
@@ -201,31 +208,81 @@
         </div>
     </section>
 
-    <section id="counter" class="counter-section py-5">
-        <div class="container">
-            <div class="row" id="counter">
-                <div class="col-md-4">
-                    <div class="counter-box">
-                        <h1 class="counter-value" data-count="20">0</h1>
-                        <h6 class="">Years Of Experience<h6>
-                    </div>
+    <footer class="">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <a class="mb-2 d-block footer-brand" href="./">
+                        <img class="img-fluid" src="./img/photography-logo.png" alt="logo">
+                    </a>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum aspernatur natus dolores veniam
+                        ex quidem quod consequatur delectus alias.</p>
                 </div>
-                <div class="col-md-4">
-                    <div class="counter-box">
-                        <h1 class="counter-value" data-count="850">0</h1>
-                        <h6 class="">Projects Done<h6>
-                    </div>
+
+                <div class="col-lg-2 col-md-6 mb-3">
+                    <h5>Packages</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-light">Home</a></li>
+                        <li class="nav-item mb-2"><a href="./servicesandpricing.html"
+                                class="nav-link p-0 text-light">Services and Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="./blogs.html" class="nav-link p-0 text-light">Blogs</a></li>
+                        <li class="nav-item mb-2"><a href="./about.html" class="nav-link p-0 text-light">About Us</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="./contact.html" class="nav-link p-0 text-light">Contact
+                                Us</a></li>
+                    </ul>
                 </div>
-                <div class="col-md-4">
-                    <div class="counter-box">
-                        <h1 class="counter-value text-white" data-count="1800">0</h1>
-                        <h6 class="">Satisfied Customers<h6>
-                    </div>
+
+                <div class="col-lg-2 col-md-6 mb-3">
+                    <h5>Contact Us</h5>
+                    <p class="d-flex">
+                        <i class="text-light fs-5 fa-solid fa-location-dot"></i>
+                        <a target="_blank" class=" ms-2 text-decoration-none text-white" href="javascript:void(0)">14782
+                            Dummy St, Cosperia, SF 32391, GSA</a>
+                    </p>
+                    <p class="d-flex">
+                        <i class="text-light fs-5 fa-solid fa-envelope"></i>
+                        <a class=" ms-2 text-decoration-none text-white" href="javascript:void(0)">
+                            info@vbthemes.com
+                        </a>
+                    </p>
+                    <p class="d-flex">
+                        <i class="text-light fs-5 fa-solid fa-phone"></i>
+                        <span>
+                            <a class="ms-2 text-decoration-none text-white d-block" href="tel:+911234567890">
+                                +91 1234567890</a>
+                        </span>
+                    </p>
+                </div>
+                <div class="col-lg-5 col-md-12 mb-3">
+                    <form action="javascript:void(0)">
+                        <h5>Subscribe to our newsletter</h5>
+                        <p>Monthly digest of what's new and exciting from us.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                            <button class="btn btn-dark" type="button">Subscribe</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </div>
-    </section>
 
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-2 border-top">
+                <p>&copy; 2022 Shubham Singh. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-light" href="#">
+                            <i class="bi bi-twitter"></i>
+                        </a></li>
+                    <li class="ms-3"><a class="link-light" href="#">
+                            <i class="bi bi-instagram"></i>
+                        </a></li>
+                    <li class="ms-3"><a class="link-light" href="#">
+                            <i class="bi bi-facebook"></i>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
     <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="bi bi-arrow-up"></i></button>
 
