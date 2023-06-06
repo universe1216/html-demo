@@ -1,13 +1,6 @@
 $(function () {
   "use strict";
 
-  //===== Counter
-
-  $(".counter").counterUp({
-    delay: 10,
-    time: 2000,
-  });
-
   // read more btn toggle
 
   $(document).ready(function () {
@@ -48,10 +41,10 @@ function topFunction() {
 
 // Read More Read Less
 
-var dayselect = document.getElementById("dayselect");
-var selectedDay = document.querySelectorAll(".selectedday");
-for (var i = 0; i < selectedDay.length; i++)
-  selectedDay[i].addEventListener("click", function handleClick() {
-    var text = this.getAttribute("title");
-    dayselect.innerHTML = text;
-  });
+// var dayselect = document.getElementById("dayselect");
+// var selectedDay = document.querySelectorAll(".selectedday");
+// for (var i = 0; i < selectedDay.length; i++)
+//   selectedDay[i].addEventListener("click", function handleClick() {
+//     var text = this.getAttribute("title");
+//     dayselect.innerHTML = text;
+//   });
